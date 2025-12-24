@@ -1,0 +1,16 @@
+{
+  "navLinks": [
+    { "name": "AI Assistant", "href": "/not-found" },
+    { "name": "Conversational AI", "href": "/not-found" },
+    { "name": "Data Analytics", "href": "/not-found" }
+  ],
+  "hero": {
+    "title": "Explore the World's Top AI Tools List",
+    "description": "Discover and compare over <strong>10,000</strong> Top AI Tools, curated and ranked by our community of <strong>3M</strong> monthly visitors",
+    "rating": {
+      "score": "4.2/5",
+      "reviewCount": "30,000+",
+      "text": "conversations"
+    }
+  }
+}
