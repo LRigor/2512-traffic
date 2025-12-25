@@ -11,6 +11,11 @@ const Header = () => {
   const pathname = usePathname();
 
   const { navLinks } = homeData;
+  
+  const hiddenRoutes = ["/terms", "/privacy"];
+  if (hiddenRoutes.includes(pathname)) {
+    return null;
+  }
 
   // 判断当前路径是否匹配链接
   const isActiveLink = (href: string) => {
@@ -21,8 +26,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#1a1625] py-4 px-6">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="bg-[#1a1625] h-18 px-6 fixed w-full z-50">
+      <div className="max-w-7xl mx-auto h-full flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image src="/images/logo.svg" alt="Logo" width={180} height={80} />
