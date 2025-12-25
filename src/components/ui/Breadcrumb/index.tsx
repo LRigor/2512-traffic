@@ -23,7 +23,9 @@ export default function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
                 {item.label}
               </Link>
             ) : (
-              <span className={isLast ? "text-gray-900" : ""}>{item.label}</span>
+              <span className={isLast ? "text-gray-900" : ""}>
+                {item.label}
+              </span>
             )}
             {!isLast && " / "}
           </span>
@@ -32,4 +34,3 @@ export default function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
     </nav>
   );
 }
-

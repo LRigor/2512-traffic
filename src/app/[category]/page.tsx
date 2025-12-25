@@ -24,13 +24,13 @@ interface CategoryData {
 const categorySlugToName: Record<string, string> = {
   "ai-assistant": "AI Assistant",
   "content-creation": "Content Creation",
-  "education": "Education",
+  education: "Education",
 };
 
 const categoryDataMap: Record<string, CategoryData> = {
   "ai-assistant": aiAssistantData as CategoryData,
   "content-creation": contentCreationData as CategoryData,
-  "education": educationData as CategoryData,
+  education: educationData as CategoryData,
 };
 
 export async function generateStaticParams() {
@@ -77,22 +77,26 @@ export default async function CategoryPage({ params }: PageProps) {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {tools.map((tool: Tool & { average_rating?: number | null }, index: number) => (
-            <OpenAiToolsCard
-              key={tool.id}
-              rank={index + 1}
-              tool_name={tool.tool_name}
-              headline={tool.headline}
-              category={tool.category}
-              thumbnail_image={tool.thumbnail_image}
-              favouriteCount={tool.favouriteCount}
-              average_rating={tool.average_rating ?? 0}
-              slug={tool.slug}
-            />
-          ))}
+          {tools.map(
+            (
+              tool: Tool & { average_rating?: number | null },
+              index: number
+            ) => (
+              <OpenAiToolsCard
+                key={tool.id}
+                rank={index + 1}
+                tool_name={tool.tool_name}
+                headline={tool.headline}
+                category={tool.category}
+                thumbnail_image={tool.thumbnail_image}
+                favouriteCount={tool.favouriteCount}
+                average_rating={tool.average_rating ?? 0}
+                slug={tool.slug}
+              />
+            )
+          )}
         </div>
       </main>
     </div>
   );
 }
-

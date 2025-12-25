@@ -11,7 +11,7 @@ interface CategoryData {
 const categoryDataMap: Record<string, CategoryData> = {
   "ai-assistant": aiAssistantData as CategoryData,
   "content-creation": contentCreationData as CategoryData,
-  "education": educationData as CategoryData,
+  education: educationData as CategoryData,
 };
 
 export async function generateStaticParams() {
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
     if (categoryData?.data && Array.isArray(categoryData.data)) {
       for (const tool of categoryData.data) {
         const slug = tool?.slug;
-        if (slug && typeof slug === 'string' && slug.trim().length > 0) {
+        if (slug && typeof slug === "string" && slug.trim().length > 0) {
           params.push({
             category: category,
             slug: slug.trim(),
@@ -46,14 +46,12 @@ interface PageProps {
 export default async function ToolDetailPage({ params }: PageProps) {
   const { category, slug } = await params;
   const categoryData = categoryDataMap[category];
-  
+
   if (!categoryData) {
     notFound();
   }
 
-  const tool = categoryData.data.find(
-    (t) => t.slug === slug
-  );
+  const tool = categoryData.data.find((t) => t.slug === slug);
 
   if (!tool) {
     notFound();
@@ -66,9 +64,14 @@ export default async function ToolDetailPage({ params }: PageProps) {
     ...educationData.data,
   ];
 
-  return <OpenAiToolsDetail 
-    tool={tool as unknown as Parameters<typeof OpenAiToolsDetail>[0]['tool']} 
-    allTools={allTools as unknown as Parameters<typeof OpenAiToolsDetail>[0]['allTools']}
-  />;
+  return (
+    <OpenAiToolsDetail
+      tool={tool as unknown as Parameters<typeof OpenAiToolsDetail>[0]["tool"]}
+      allTools={
+        allTools as unknown as Parameters<
+          typeof OpenAiToolsDetail
+        >[0]["allTools"]
+      }
+    />
+  );
 }
-
