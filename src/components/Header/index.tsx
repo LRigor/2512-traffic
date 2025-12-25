@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import homeData from '@/data/home.json';
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import homeData from "@/data/home.json";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +15,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/images/logo.svg"
-            alt="Logo"
-            width={180}
-            height={80}
-          />
+          <Image src="/images/logo.svg" alt="Logo" width={180} height={80} />
         </Link>
 
         {/* Desktop Navigation */}
@@ -30,7 +25,7 @@ const Header = () => {
               key={link.name}
               href={link.href}
               className={`text-sm font-medium transition-colors hover:text-[#e94560] ${
-                link.highlight ? 'text-[#e94560]' : 'text-gray-300'
+                link.highlight ? "text-[#e94560]" : "text-gray-300"
               }`}
             >
               {link.name}
