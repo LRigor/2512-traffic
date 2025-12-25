@@ -1,14 +1,17 @@
 [
   {
-      "count": 756,
-      "category": "AI Assistant"
+    "id": "ai-assistant",
+    "category": "AI Assistant",
+    "description": "Discover intelligent AI assistants that help you automate tasks, answer questions, and enhance productivity."
   },
   {
-      "count": 377,
-      "category": "Content Creation"
+    "id": "content-creation",
+    "category": "Content Creation",
+    "description": "Explore powerful AI tools for creating engaging content, from writing and design to video and audio production."
   },
   {
-      "count": 270,
-      "category": "Education"
+    "id": "education",
+    "category": "Education",
+    "description": "Find innovative AI-powered educational tools that make learning more effective, personalized, and accessible."
   }
 ]

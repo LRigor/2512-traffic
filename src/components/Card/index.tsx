@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import StarRating from "@/components/StarRating";
 
-interface OpenAiToolsCardProps {
+interface CardProps {
   rank?: number;
   tool_name: string;
   headline: string;
@@ -15,7 +16,7 @@ interface OpenAiToolsCardProps {
   onClick?: () => void;
 }
 
-export default function OpenAiToolsCard({
+export default function Card({
   rank,
   tool_name,
   headline,
@@ -25,12 +26,7 @@ export default function OpenAiToolsCard({
   average_rating,
   slug,
   onClick,
-}: OpenAiToolsCardProps) {
-  // Calculate full stars, half star, and empty stars
-  const fullStars = Math.floor(average_rating);
-  const hasHalfStar = average_rating % 1 >= 0.5;
-  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-
+}: CardProps) {
   const categorySlug = category.toLowerCase().replace(/\s+/g, "-");
   const detailUrl = slug ? `/${categorySlug}/${slug}` : "#";
 
@@ -88,45 +84,7 @@ export default function OpenAiToolsCard({
 
         {/* Rating and Category */}
         <div className="flex items-center justify-between mt-auto">
-          <div className="flex items-center">
-            {/* Full Stars */}
-            {Array.from({ length: fullStars }).map((_, i) => (
-              <Image
-                key={`full-${i}`}
-                src="/star.svg"
-                alt="Full star"
-                width={20}
-                height={20}
-                className="h-5 w-5"
-                aria-hidden="true"
-              />
-            ))}
-
-            {/* Half Star */}
-            {hasHalfStar && (
-              <Image
-                src="/star-half.svg"
-                alt="Half star"
-                width={20}
-                height={20}
-                className="h-5 w-5"
-                aria-hidden="true"
-              />
-            )}
-
-            {/* Empty Stars */}
-            {Array.from({ length: emptyStars }).map((_, i) => (
-              <Image
-                key={`empty-${i}`}
-                src="/star-empty.svg"
-                alt="Empty star"
-                width={20}
-                height={20}
-                className="h-5 w-5"
-                aria-hidden="true"
-              />
-            ))}
-          </div>
+          <StarRating rating={average_rating} />
 
           {/* Category Badge */}
           <div className="bg-green-100 text-green-800 px-2 py-1 text-xs font-medium rounded-full cursor-pointer hover:opacity-90 transition-opacity max-w-[120px] truncate">
