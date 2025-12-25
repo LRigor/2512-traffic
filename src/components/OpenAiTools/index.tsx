@@ -1,4 +1,4 @@
-import AICard from "../AICard";
+import OpenAiToolsCard from "../OpenAiToolsCard";
 import categoriesData from "@/data/categories.json";
 import aiAssistantData from "@/data/ai-assistant.json";
 import contentCreationData from "@/data/content-creation.json";
@@ -26,7 +26,7 @@ const categoryDataMap: Record<string, CategoryData> = {
   "Education": educationData as CategoryData,
 };
 
-export default function HomePage() {
+export default function OpenAITools() {
   return (
     <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
       <main className="container mx-auto px-4 py-8 max-w-7xl">
@@ -58,7 +58,7 @@ export default function HomePage() {
               {/* Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {tools.slice(0, 10).map((tool: Tool, index: number) => (
-                  <AICard
+                  <OpenAiToolsCard
                     key={tool.id}
                     rank={index + 1}
                     tool_name={tool.tool_name}
@@ -78,4 +78,3 @@ export default function HomePage() {
     </div>
   );
 }
-

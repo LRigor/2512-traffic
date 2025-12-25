@@ -1,9 +1,9 @@
-import Header from "@/components/Home/Header";
+import OpenAITools from "../OpenAiTools";
 
 export default function HomePage() {
   return (
     <div>
-      <Header />
+      <OpenAITools />
     </div>
   );
 }

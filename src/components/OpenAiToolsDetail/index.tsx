@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { formatDate } from "@/utils/formatDate";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 interface PricingPlan {
   title: string;
@@ -34,12 +35,12 @@ interface Tool {
   description?: string;
 }
 
-interface AICardDetailProps {
+interface OpenAiToolsDetailProps {
   tool: Tool;
   allTools?: Tool[];
 }
 
-export default function AICardDetail({ tool, allTools = [] }: AICardDetailProps) {
+export default function OpenAiToolsDetail({ tool, allTools = [] }: OpenAiToolsDetailProps) {
   const [expandedFaq, setExpandedFaq] = useState<string | null>(null);
   const [expandedUseCase, setExpandedUseCase] = useState<string | null>(null);
 
@@ -99,17 +100,14 @@ export default function AICardDetail({ tool, allTools = [] }: AICardDetailProps)
     <div className="min-h-screen bg-white">
       {/* Breadcrumb */}
       <div className="container mx-auto px-4 py-4 max-w-7xl">
-        <nav className="text-sm text-gray-600 mb-6">
-          <Link href="/" className="hover:text-gray-900">
-            home
-          </Link>
-          {" / "}
-          <Link href={`/tools/${tool.category_slug}`} className="hover:text-gray-900">
-            tools
-          </Link>
-          {" / "}
-          <span className="text-gray-900">{tool.slug}</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: "home", href: "/" },
+            { label: tool.category_slug, href: `/${tool.category_slug}` },
+            { label: tool.slug },
+          ]}
+          className="mb-6"
+        />
 
         {/* Tool Header */}
         <div className="mb-8">
