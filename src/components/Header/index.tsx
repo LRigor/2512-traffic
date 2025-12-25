@@ -5,10 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import homeData from "@/data/home.json";
 
+interface NavLink {
+  name: string;
+  href: string;
+  highlight?: boolean;
+}
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const { navLinks } = homeData;
+  const { navLinks } = homeData as { navLinks: NavLink[] };
 
   return (
     <header className="bg-[#1a1625] py-4 px-6">

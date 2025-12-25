@@ -13,6 +13,7 @@ import Tags from "@/components/Tags";
 import Reviews from "@/components/Reviews";
 import UseCases from "@/components/UseCases";
 import Alternatives from "@/components/Alternatives";
+import Share from "@/components/Share";
 import { formatDate } from "@/utils/formatDate";
 import StarRating from "@/components/StarRating";
 import {
@@ -189,9 +190,10 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
       <FAQs tool={toolWithCategory} />
       <Pricing tool={toolWithCategory} />
       <Tags tool={toolWithCategory} />
+      <Share />
       <Reviews />
-      <UseCases />
       <Alternatives tool={toolWithCategory} allTools={allTools} />
+      <UseCases tool={toolWithCategory} />
     </>
   );
 }

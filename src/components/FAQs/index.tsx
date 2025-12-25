@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import type { Tool } from "@/types/tools";
 
 interface FAQsProps {
@@ -33,21 +34,15 @@ export default function FAQs({ tool }: FAQsProps) {
               <span className="font-semibold text-gray-900">
                 {faq.question}
               </span>
-              <svg
-                className={`w-5 h-5 text-gray-500 transition-transform ${
+              <Image
+                src="/chevron-down.svg"
+                alt="Toggle FAQ"
+                width={20}
+                height={20}
+                className={`w-5 h-5 transition-transform ${
                   expandedFaq === faq._id ? "rotate-180" : ""
                 }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeCap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              />
             </button>
             {expandedFaq === faq._id && (
               <div className="pb-4 text-gray-600">{faq.answer}</div>
@@ -58,4 +53,3 @@ export default function FAQs({ tool }: FAQsProps) {
     </section>
   );
 }
-

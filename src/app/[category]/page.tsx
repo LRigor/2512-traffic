@@ -10,10 +10,24 @@ import {
 } from "@/lib/category-data";
 
 export async function generateStaticParams() {
-  const categories = getAllCategories();
-  return categories.map((item) => ({
-    category: item.id,
-  }));
+  try {
+    const categories = getAllCategories();
+    // Ensure we return valid params for static export
+    if (!categories || categories.length === 0) {
+      return [];
+    }
+    const params = categories
+      .filter((item) => item.id && typeof item.id === "string" && item.id.trim() !== "")
+      .map((item) => ({
+        category: item.id.trim(),
+      }));
+    
+    // Ensure we always return an array
+    return params.length > 0 ? params : [];
+  } catch (error) {
+    console.error("Error generating static params for categories:", error);
+    return [];
+  }
 }
 
 interface CategoryPageProps {

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 import type { Tool } from "@/types/tools";
 
 interface AlternativesProps {
@@ -8,10 +9,7 @@ interface AlternativesProps {
   allTools: Tool[];
 }
 
-export default function Alternatives({
-  tool,
-  allTools,
-}: AlternativesProps) {
+export default function Alternatives({ tool, allTools }: AlternativesProps) {
   // Get similar tools data
   const similarToolsData = (tool.similar_tools || [])
     .map((similar) => allTools.find((t) => t.id === similar.id))
@@ -27,11 +25,11 @@ export default function Alternatives({
       <h2 className="text-2xl font-bold text-black mb-6">
         Top {tool.tool_name} Alternatives
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {similarToolsData.map((similarTool) => (
           <div
             key={similarTool.id}
-            className="border rounded-lg p-4 hover:shadow-lg transition-shadow"
+            className="border border-gray-300 rounded-lg p-4 hover:shadow-lg transition-shadow"
           >
             <Image
               src={similarTool.thumbnail_image}
@@ -57,13 +55,12 @@ export default function Alternatives({
             <p className="text-sm text-gray-600 mb-4 line-clamp-2">
               {similarTool.headline}
             </p>
-            <button className="w-full bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors">
+            <Button variant="danger" className="w-full">
               Compare {similarTool.tool_name} with {tool.tool_name}
-            </button>
+            </Button>
           </div>
         ))}
       </div>
     </section>
   );
 }
-
