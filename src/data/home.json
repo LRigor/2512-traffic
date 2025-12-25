@@ -1,8 +1,8 @@
 {
   "navLinks": [
-    { "name": "AI Assistant", "href": "/not-found" },
-    { "name": "Conversational AI", "href": "/not-found" },
-    { "name": "Data Analytics", "href": "/not-found" }
+    { "name": "AI Assistant", "href": "/ai-assistant" },
+    { "name": "Content Creation", "href": "/content-creation" },
+    { "name": "Education", "href": "/education" }
   ],
   "hero": {
     "title": "Explore the World's Top AI Tools List",
@@ -12,5 +12,179 @@
       "reviewCount": "30,000+",
       "text": "conversations"
     }
+  },
+  "featured": {
+    "title": "Featured Tools",
+    "items": [
+      {
+        "id": "claude",
+        "name": "Claude",
+        "description": "Meet Claude 3.5 Sonnet: The Ultimate AI Assistant for Work",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/86010678-7ff5-45f0-f638-6593849fe100/test",
+        "votes": 141,
+        "rating": 5,
+        "href": "/ai-assistant/claude"
+      },
+      {
+        "id": "godmode",
+        "name": "Godmode",
+        "description": "Unlock the Power of Autonomous AI with Godmode",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/c33e159d-1ffb-4f3a-0b60-c004c4317c00/test",
+        "votes": 65,
+        "rating": 5,
+        "href": "/ai-assistant/godmode"
+      },
+      {
+        "id": "tammy-ai",
+        "name": "Tammy AI",
+        "description": "Enhance Your Experience with Tammy AI's Advanced Features",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/9a59e22c-670e-4082-2dd7-4c4f45590000/contentthumbnail",
+        "votes": 64,
+        "rating": 4.5,
+        "href": "/ai-assistant/tammy-ai"
+      },
+      {
+        "id": "donotpay",
+        "name": "DoNotPay",
+        "description": "DoNotPay: Your AI Consumer Champion",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/608da097-1f5c-4b77-e3ec-58d4ea5bc300/contentbanner",
+        "votes": 42,
+        "rating": 5,
+        "href": "/ai-assistant/donotpay"
+      },
+      {
+        "id": "writesonic",
+        "name": "Writesonic",
+        "description": "Experience the Future of Content Creation with AI Article Writer 6.0!",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/763b0b89-a87d-4498-2fe2-37c0f1a06900/Toolpage",
+        "votes": 24,
+        "rating": 5,
+        "href": "/content-creation/writesonic"
+      },
+      {
+        "id": "galeby",
+        "name": "Galeby",
+        "description": "Transform Your Voice into Structured Notes with Talknotes",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/fff162b0-0637-4ac7-ee2b-11bb4c05a700/contentbanner",
+        "votes": 19,
+        "rating": 4,
+        "href": "/content-creation/galeby"
+      },
+      {
+        "id": "jasper",
+        "name": "Jasper",
+        "description": "Elevate Your Content Creation with Jasper AI",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/1802e69f-8c14-444e-9636-74b8cc028300/contentbanner",
+        "votes": 16,
+        "rating": 5,
+        "href": "/content-creation/jasper"
+      },
+      {
+        "id": "rytr",
+        "name": "Rytr",
+        "description": "Create High-Quality Content Effortlessly with Rytr's AI",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/47a1d8f6-fd3a-4779-e14c-75bdb8369800/Toolpage",
+        "votes": 15,
+        "rating": 5,
+        "href": "/content-creation/rytr"
+      },
+      {
+        "id": "tutorai",
+        "name": "TutorAI",
+        "description": "Personalized AI Tutoring for Every Learner",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/dfb7a8a9-50fd-45b0-39aa-c390aee6bd00/test",
+        "votes": 45,
+        "rating": 5,
+        "href": "/education/tutorai"
+      },
+      {
+        "id": "homeworkify",
+        "name": "Homeworkify",
+        "description": "Study Smarter, Not Harder with Homeworkify",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/7116eb44-c323-40b2-7cb6-3c18e6cbcc00/public",
+        "votes": 21,
+        "rating": 5,
+        "href": "/education/homeworkify"
+      },
+      {
+        "id": "magicschoolai",
+        "name": "MagicSchool.ai",
+        "description": "Join the AI Pioneers Program and Lead the Future of Education!",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/10575be2-4361-4ef9-0f38-05f174cbb800/contentthumbnail",
+        "votes": 14,
+        "rating": 5,
+        "href": "/education/magicschoolai"
+      },
+      {
+        "id": "khan-academy",
+        "name": "Khan Academy",
+        "description": "Revolutionize Learning with Khanmigo: Your On-Demand AI Tutor",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/eaa0849b-e5a4-4f28-8cbf-7b8197f5da00/Toolpage",
+        "votes": 13,
+        "rating": 5,
+        "href": "/education/khan-academy"
+      }
+    ]
+  },
+  "launchedToday": {
+    "title": "Launched Today",
+    "items": [
+      {
+        "id": "mymind",
+        "name": "MyMind",
+        "description": "Organize Your Mind with mymind - No Ads, No Tracking!",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/86010678-7ff5-45f0-f638-6593849fe100/test",
+        "href": "/ai-assistant/mymind"
+      },
+      {
+        "id": "formzil",
+        "name": "Formzil",
+        "description": "Make & Publish Online Forms Instantly with Formzil",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/c33e159d-1ffb-4f3a-0b60-c004c4317c00/test",
+        "href": "/ai-assistant/formzil"
+      },
+      {
+        "id": "cheapgpt",
+        "name": "CheapGPT",
+        "description": "Cheapgpt.xyz Domain For Sale - Great for Flight Deals and GPT Searches",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/9a59e22c-670e-4082-2dd7-4c4f45590000/contentthumbnail",
+        "href": "/ai-assistant/cheapgpt"
+      },
+      {
+        "id": "caveduck",
+        "name": "Caveduck",
+        "description": "Unlock Real-Time Interactions with AI-Generated Characters on Caveduck.",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/608da097-1f5c-4b77-e3ec-58d4ea5bc300/contentbanner",
+        "href": "/ai-assistant/caveduck"
+      },
+      {
+        "id": "rushchat-ai",
+        "name": "RushChat AI",
+        "description": "Engage with diverse AI-driven characters on Rushchat.ai",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/763b0b89-a87d-4498-2fe2-37c0f1a06900/Toolpage",
+        "href": "/ai-assistant/rushchat-ai"
+      },
+      {
+        "id": "extracta-ai",
+        "name": "Extracta.ai",
+        "description": "Revolutionize data extraction with innovative AI-driven solutions.",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/fff162b0-0637-4ac7-ee2b-11bb4c05a700/contentbanner",
+        "href": "/ai-assistant/extracta-ai"
+      },
+      {
+        "id": "bg-eraser",
+        "name": "Bg Eraser",
+        "description": "Remove Backgrounds from Any Image with BgEraser!",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/1802e69f-8c14-444e-9636-74b8cc028300/contentbanner",
+        "href": "/content-creation/bg-eraser"
+      },
+      {
+        "id": "11cast",
+        "name": "11Cast",
+        "description": "Revolutionize Your Podcast Production with 11Cast AI.",
+        "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/47a1d8f6-fd3a-4779-e14c-75bdb8369800/Toolpage",
+        "href": "/content-creation/11cast"
+      }
+    ]
   }
 }

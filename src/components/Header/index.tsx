@@ -3,12 +3,22 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import homeData from "@/data/home.json";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const { navLinks } = homeData;
+
+  // 判断当前路径是否匹配链接
+  const isActiveLink = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <header className="bg-[#1a1625] py-4 px-6">
@@ -25,7 +35,9 @@ const Header = () => {
               key={link.name}
               href={link.href}
               className={`text-sm font-medium transition-colors hover:text-[#e94560] ${
-                link.highlight ? "text-[#e94560]" : "text-gray-300"
+                isActiveLink(link.href)
+                  ? "text-[#e94560] border-b-2 border-[#e94560] pb-1"
+                  : "text-gray-300"
               }`}
             >
               {link.name}
@@ -107,7 +119,9 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   className={`text-base font-medium transition-colors hover:text-[#e94560] ${
-                    link.highlight ? 'text-[#e94560]' : 'text-gray-300'
+                    isActiveLink(link.href)
+                      ? "text-[#e94560] border-l-2 border-[#e94560] pl-2"
+                      : "text-gray-300"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
