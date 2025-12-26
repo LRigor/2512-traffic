@@ -32,6 +32,7 @@ export interface Tool {
   faqs?: Array<{ question: string; answer: string; _id: string }>;
   description?: string;
   general_use_cases?: GeneralUseCase[];
+  tool_url?: string;
 }
 
 export interface CategoryData {
