@@ -7,7 +7,7 @@ const Featured = () => {
   const { featured } = homeData;
 
   return (
-    <section className="bg-white py-12 px-6">
+    <section className="bg-white  px-6 -mt-12">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-2xl font-bold text-gray-900 mb-8">
