@@ -25,11 +25,11 @@ export default function Alternatives({ tool, allTools }: AlternativesProps) {
       <h2 className="text-2xl font-bold text-black mb-6">
         Top {tool.tool_name} Alternatives
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {similarToolsData.map((similarTool) => (
           <div
             key={similarTool.id}
-            className="border border-gray-300 rounded-lg p-4 hover:shadow-lg transition-shadow"
+            className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow"
           >
             <Image
               src={similarTool.thumbnail_image}

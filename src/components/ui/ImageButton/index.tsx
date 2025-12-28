@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { ButtonHTMLAttributes } from "react";
 import Button from "../Button";
@@ -30,9 +31,13 @@ export default function ImageButton({
       className={`flex items-center gap-2 ${className}`}
       {...props}
     >
-      <Image src={imagePath} alt={imageAlt} width={imageWidth} height={imageHeight} />
+      <Image
+        src={imagePath}
+        alt={imageAlt}
+        width={imageWidth}
+        height={imageHeight}
+      />
       <span>{text}</span>
     </Button>
   );
 }
-

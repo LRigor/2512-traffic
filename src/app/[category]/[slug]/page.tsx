@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumb from "@/components/ui/Breadcrumb";
-import Button from "@/components/ui/Button";
-import ImageButton from "@/components/ui/ImageButton";
+import FavouriteButton from "@/components/FavouriteButton";
 import Description from "@/components/Description";
 import Features from "@/components/Features";
 import FAQs from "@/components/FAQs";
@@ -15,6 +14,7 @@ import UseCases from "@/components/UseCases";
 import Alternatives from "@/components/Alternatives";
 import Share from "@/components/Share";
 import { formatDate } from "@/utils/formatDate";
+import OpenToolsBadge from "@/components/OpenToolsBadge";
 import StarRating from "@/components/StarRating";
 import {
   getCategoryData,
@@ -135,38 +135,37 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
       <div className="mb-8">
         <div className="flex items-start justify-between mb-4">
           <div className="flex-1">
-            <h1 className="text-4xl font-bold text-black mb-4">
-              {tool.tool_name}
-            </h1>
+            <div className="flex items-center justify-between gap-4 mb-4">
+              <div className="flex gap-4">
+                <h1 className="text-4xl font-bold text-black">
+                  {tool.tool_name}
+                </h1>
+                <FavouriteButton favouriteCount={tool.favouriteCount} />
+              </div>
+              {tool.tool_url && (
+                <Link
+                  href={tool.tool_url}
+                  className="px-6 py-2 rounded-md font-medium transition-colors bg-blue-600 text-white hover:bg-blue-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Check out {tool.tool_name}
+                </Link>
+              )}
+            </div>
             <div className="flex items-center gap-4 mb-4">
-              <ImageButton
-                imagePath="/up-arrow-blank.svg"
-                text={tool.favouriteCount}
-                variant="secondary"
-                className="px-3 py-1 bg-gray-100 hover:bg-gray-200"
-                imageAlt="Upvote"
+              <OpenToolsBadge
+                favouriteCount={tool.favouriteCount}
+                slug={tool.slug}
               />
-              <ImageButton
-                imagePath="/up-arrow-blank.svg"
-                text="VOTED TOP TOOL ON OPENTOOLS"
-                variant="secondary"
-                className="bg-red-100 border border-red-300 text-red-800 px-3 py-1 text-sm font-medium hover:bg-red-100"
-                imageAlt="Upvote"
-                imageWidth={14}
-                imageHeight={14}
-              />
-              <ImageButton
-                imagePath="/copy.svg"
-                text="Copy Code"
-                variant="danger"
-                imageAlt="Copy"
-              />
-              <Link href="#" className="text-blue-600 hover:underline text-sm">
+              <Link
+                href="https://opentools.ai/friends/claim-tool?tool_id=669930dc46403d98189af85a"
+                className="text-blue-600 hover:underline text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Claim Tool
               </Link>
-              <Button variant="primary" className="px-6">
-                Check out {tool.tool_name}
-              </Button>
             </div>
             {tool.last_updated && (
               <p className="text-sm text-gray-600 mb-4">
