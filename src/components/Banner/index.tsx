@@ -4,7 +4,7 @@ import StarRating from "@/components/StarRating";
 export default function Banner() {
   return (
     <div
-      className="text-center py-16 px-4"
+      className="text-center py-16 px-4 pt-28"
       style={{ backgroundColor: "#1A132A" }}
     >
       <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
