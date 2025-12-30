@@ -13,5 +13,15 @@
     "id": "education",
     "category": "Education",
     "description": "Find innovative AI-powered educational tools that make learning more effective, personalized, and accessible."
+  },
+  {
+    "id": "image-generation",
+    "category": "Image Generation",
+    "description": "Explore cutting-edge AI tools for generating stunning images, artwork, and graphics with advanced machine learning models."
+  },
+  {
+    "id": "conversational-ai",
+    "category": "Conversational AI",
+    "description": "Discover intelligent chatbots and conversational AI tools that enable natural language interactions and automated customer support."
   }
 ]
