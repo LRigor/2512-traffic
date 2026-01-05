@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const Footer = () => {
   const pathname = usePathname();
 
-  const hiddenRoutes = ["/terms", "/privacy"];
+  const hiddenRoutes = ["/terms", "/privacy", "/about"];
   if (hiddenRoutes.includes(pathname)) {
     return null;
   }
@@ -31,10 +31,18 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Legal Links */}
+          {/* Company Links */}
           <div>
-            <h3 className="text-base font-semibold mb-4">Legal</h3>
+            <h3 className="text-base font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-sm hover:underline"
+                >
+                  About Us
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/privacy"
@@ -60,7 +68,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <p className="text-gray-400 text-sm">
-            © 2025 OpenTools - 保留所有权利。
+            © 2026 OpenTools - 保留所有权利。
           </p>
         </div>
       </div>
