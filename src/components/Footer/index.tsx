@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const Footer = () => {
   const pathname = usePathname();
 
-  const hiddenRoutes = ["/terms", "/privacy", "/about"];
+  const hiddenRoutes = ["/terms", "/privacy", "/about", "/faq", "/help", "/contact"];
   if (hiddenRoutes.includes(pathname)) {
     return null;
   }
@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1a1625] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
           <div>
             <Link href="/" className="inline-block mb-4">
@@ -57,6 +57,37 @@ const Footer = () => {
                   className="text-sm hover:underline"
                 >
                   Terms of Service
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Support Links */}
+          <div>
+            <h3 className="text-base font-semibold mb-4">Support</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/help"
+                  className="text-sm hover:underline"
+                >
+                  Help Center
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="text-sm hover:underline"
+                >
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm hover:underline"
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>
