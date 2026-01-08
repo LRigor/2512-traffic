@@ -1,5 +1,6 @@
 {
   "navLinks": [
+    { "name": "News", "href": "/news" },
     { "name": "AI Assistant", "href": "/ai-assistant" },
     { "name": "Content Creation", "href": "/content-creation" },
     { "name": "Education", "href": "/education" }
