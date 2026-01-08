@@ -2,7 +2,9 @@
   "navLinks": [
     { "name": "AI Assistant", "href": "/ai-assistant" },
     { "name": "Content Creation", "href": "/content-creation" },
-    { "name": "Education", "href": "/education" }
+    { "name": "Education", "href": "/education" },
+    { "name": "Image Generation", "href": "/image-generation" },
+    { "name": "Conversational AI", "href": "/conversational-ai" }
   ],
   "hero": {
     "title": "Explore the World's Top AI Tools List",
@@ -134,56 +136,56 @@
         "name": "MyMind",
         "description": "Organize Your Mind with mymind - No Ads, No Tracking!",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/86010678-7ff5-45f0-f638-6593849fe100/test",
-        "href": "/ai-assistant/mymind"
+        "href": "/tool/mymind"
       },
       {
         "id": "formzil",
         "name": "Formzil",
         "description": "Make & Publish Online Forms Instantly with Formzil",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/c33e159d-1ffb-4f3a-0b60-c004c4317c00/test",
-        "href": "/ai-assistant/formzil"
+        "href": "/tool/formzil"
       },
       {
         "id": "cheapgpt",
         "name": "CheapGPT",
         "description": "Cheapgpt.xyz Domain For Sale - Great for Flight Deals and GPT Searches",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/9a59e22c-670e-4082-2dd7-4c4f45590000/contentthumbnail",
-        "href": "/ai-assistant/cheapgpt"
+        "href": "/tool/cheapgpt"
       },
       {
         "id": "caveduck",
         "name": "Caveduck",
         "description": "Unlock Real-Time Interactions with AI-Generated Characters on Caveduck.",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/608da097-1f5c-4b77-e3ec-58d4ea5bc300/contentbanner",
-        "href": "/ai-assistant/caveduck"
+        "href": "/tool/caveduck"
       },
       {
         "id": "rushchat-ai",
         "name": "RushChat AI",
         "description": "Engage with diverse AI-driven characters on Rushchat.ai",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/763b0b89-a87d-4498-2fe2-37c0f1a06900/Toolpage",
-        "href": "/ai-assistant/rushchat-ai"
+        "href": "/tool/rushchat-ai"
       },
       {
         "id": "extracta-ai",
         "name": "Extracta.ai",
         "description": "Revolutionize data extraction with innovative AI-driven solutions.",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/fff162b0-0637-4ac7-ee2b-11bb4c05a700/contentbanner",
-        "href": "/ai-assistant/extracta-ai"
+        "href": "/tool/extracta-ai"
       },
       {
         "id": "bg-eraser",
         "name": "Bg Eraser",
         "description": "Remove Backgrounds from Any Image with BgEraser!",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/1802e69f-8c14-444e-9636-74b8cc028300/contentbanner",
-        "href": "/content-creation/bg-eraser"
+        "href": "/tool/bg-eraser"
       },
       {
         "id": "11cast",
         "name": "11Cast",
         "description": "Revolutionize Your Podcast Production with 11Cast AI.",
         "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/47a1d8f6-fd3a-4779-e14c-75bdb8369800/Toolpage",
-        "href": "/content-creation/11cast"
+        "href": "/tool/11cast"
       }
     ]
   }

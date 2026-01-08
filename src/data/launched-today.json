@@ -1,0 +1,518 @@
+{
+  "tools": [
+    {
+      "id": "mymind",
+      "slug": "mymind",
+      "tool_name": "MyMind",
+      "headline": "Organize Your Mind with mymind - No Ads, No Tracking!",
+      "description": "mymind is a versatile tool designed to capture and organize your thoughts, inspirations, and information. It offers various plans, including the Student of Life at $6.99 per month and Mastermind at $12.99 per month, with features such as AI Image Tagging, Advanced Search, Intelligent Bookmarks, and more. The Newton Plan, priced at $299 per year, will be available soon. The platform promises a distraction-free experience with a strong commitment to privacy, no ads, and no data tracking, making it ideal for anyone seeking an organized, clutter-free mind.",
+      "category": "Productivity",
+      "category_slug": "productivity",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/5e954930-70a6-45bb-4af6-0785aefa3000/Toolpage",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/86010678-7ff5-45f0-f638-6593849fe100/test",
+      "tool_url": "https://mymind.com",
+      "favouriteCount": 5,
+      "average_rating": 4.5,
+      "review_count": 0,
+      "last_updated": "2025-12-23",
+      "features": [
+        "Intelligent Bookmarks",
+        "AI Image Tagging",
+        "Text Clippings",
+        "Image Text Recognition",
+        "Advanced Image Search",
+        "Reading Mode",
+        "Article Backup",
+        "AI Summary",
+        "Night Mode",
+        "100% Private"
+      ],
+      "pricing": [
+        {
+          "name": "Student of Life",
+          "price": "$6.99",
+          "period": "month",
+          "features": [
+            "AI Image Tagging",
+            "Advanced Search",
+            "Intelligent Bookmarks",
+            "Basic Features"
+          ]
+        },
+        {
+          "name": "Mastermind",
+          "price": "$12.99",
+          "period": "month",
+          "features": [
+            "All Student of Life features",
+            "AI Summary",
+            "Advanced Image Search",
+            "Article Backup",
+            "Priority Support"
+          ]
+        },
+        {
+          "name": "Newton Plan",
+          "price": "$299",
+          "period": "year",
+          "features": [
+            "All Mastermind features",
+            "Unlimited Storage",
+            "Premium Support",
+            "Coming Soon"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Students",
+          "description": "Students can save research materials, notes, and references, making studying easier and more organized."
+        },
+        {
+          "title": "Professionals",
+          "description": "Professionals can save important documents, bookmarks, and meeting notes for quick and easy access."
+        },
+        {
+          "title": "Creative Minds",
+          "description": "Creatives can capture inspiration, project ideas, and visual references effortlessly."
+        },
+        {
+          "title": "ADHD Individuals",
+          "description": "Individuals with ADHD can use mymind to organize thoughts and tasks without feeling overwhelmed."
+        }
+      ],
+      "tags": ["productivity", "note-taking", "organization", "privacy", "AI"]
+    },
+    {
+      "id": "formzil",
+      "slug": "formzil",
+      "tool_name": "Formzil",
+      "headline": "Make & Publish Online Forms Instantly with Formzil",
+      "description": "Formzil is a powerful online form builder that allows you to create, customize, and publish forms instantly. Whether you need surveys, feedback forms, registration forms, or contact forms, Formzil provides an intuitive drag-and-drop interface with advanced features like conditional logic, payment integration, and real-time analytics. Perfect for businesses, educators, and individuals who need professional forms without coding.",
+      "category": "Productivity",
+      "category_slug": "productivity",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/c33e159d-1ffb-4f3a-0b60-c004c4317c00/test",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/c33e159d-1ffb-4f3a-0b60-c004c4317c00/test",
+      "tool_url": "https://formzil.com",
+      "favouriteCount": 3,
+      "average_rating": 4.3,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "Drag & Drop Builder",
+        "Custom Form Templates",
+        "Conditional Logic",
+        "Payment Integration",
+        "Real-time Analytics",
+        "Mobile Responsive",
+        "Email Notifications",
+        "Data Export"
+      ],
+      "pricing": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "period": "forever",
+          "features": [
+            "Up to 100 submissions/month",
+            "Basic form fields",
+            "Email notifications",
+            "Mobile responsive"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$19",
+          "period": "month",
+          "features": [
+            "Unlimited submissions",
+            "All form types",
+            "Payment integration",
+            "Advanced analytics",
+            "Priority support"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Businesses",
+          "description": "Create professional contact forms, lead generation forms, and customer feedback surveys."
+        },
+        {
+          "title": "Educators",
+          "description": "Build course registration forms, student surveys, and assignment submission forms."
+        },
+        {
+          "title": "Event Organizers",
+          "description": "Design event registration forms with payment processing and attendee management."
+        }
+      ],
+      "tags": ["forms", "surveys", "productivity", "no-code"]
+    },
+    {
+      "id": "cheapgpt",
+      "slug": "cheapgpt",
+      "tool_name": "CheapGPT",
+      "headline": "Affordable AI-Powered Chatbot Solutions",
+      "description": "CheapGPT offers cost-effective AI chatbot solutions powered by advanced language models. Get the same quality conversations at a fraction of the cost. Perfect for startups, small businesses, and individuals who want to leverage AI technology without breaking the bank. Features include natural language processing, multi-language support, and easy integration.",
+      "category": "Conversational AI",
+      "category_slug": "conversational-ai",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/9a59e22c-670e-4082-2dd7-4c4f45590000/contentthumbnail",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/9a59e22c-670e-4082-2dd7-4c4f45590000/contentthumbnail",
+      "tool_url": "https://cheapgpt.xyz",
+      "favouriteCount": 8,
+      "average_rating": 4.0,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "Cost-Effective Pricing",
+        "Natural Language Processing",
+        "Multi-Language Support",
+        "API Integration",
+        "Fast Response Time",
+        "24/7 Availability"
+      ],
+      "pricing": [
+        {
+          "name": "Starter",
+          "price": "$5",
+          "period": "month",
+          "features": [
+            "10,000 tokens/month",
+            "Basic support",
+            "API access"
+          ]
+        },
+        {
+          "name": "Business",
+          "price": "$15",
+          "period": "month",
+          "features": [
+            "100,000 tokens/month",
+            "Priority support",
+            "Advanced features",
+            "Custom training"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Startups",
+          "description": "Affordable AI solutions for budget-conscious startups building chatbot features."
+        },
+        {
+          "title": "Developers",
+          "description": "Easy integration for developers looking to add AI capabilities to their apps."
+        }
+      ],
+      "tags": ["AI", "chatbot", "affordable", "conversational-ai"]
+    },
+    {
+      "id": "caveduck",
+      "slug": "caveduck",
+      "tool_name": "Caveduck",
+      "headline": "Unlock Real-Time Interactions with AI-Generated Characters",
+      "description": "Caveduck brings AI characters to life with real-time interactions and dynamic conversations. Create and interact with unique AI personalities, from virtual assistants to creative companions. Features advanced AI technology for natural, engaging conversations with customizable character traits, voices, and personalities.",
+      "category": "Conversational AI",
+      "category_slug": "conversational-ai",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/608da097-1f5c-4b77-e3ec-58d4ea5bc300/contentbanner",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/608da097-1f5c-4b77-e3ec-58d4ea5bc300/contentbanner",
+      "tool_url": "https://caveduck.io",
+      "favouriteCount": 12,
+      "average_rating": 4.6,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "Real-Time AI Conversations",
+        "Custom Character Creation",
+        "Voice Synthesis",
+        "Personality Customization",
+        "Multi-Character Support",
+        "Interactive Storytelling"
+      ],
+      "pricing": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "period": "month",
+          "features": [
+            "3 AI characters",
+            "Basic conversations",
+            "Standard voice"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price": "$9.99",
+          "period": "month",
+          "features": [
+            "Unlimited characters",
+            "Advanced AI models",
+            "Custom voices",
+            "Priority access"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Content Creators",
+          "description": "Create engaging AI characters for content, streams, and interactive experiences."
+        },
+        {
+          "title": "Game Developers",
+          "description": "Build immersive NPCs with realistic conversations for gaming experiences."
+        }
+      ],
+      "tags": ["AI", "characters", "conversational-ai", "interactive"]
+    },
+    {
+      "id": "rushchat-ai",
+      "slug": "rushchat-ai",
+      "tool_name": "RushChat AI",
+      "headline": "Engage with Diverse AI-Driven Characters",
+      "description": "RushChat AI offers a platform to interact with diverse AI-driven characters, each with unique personalities and expertise. From helpful assistants to creative companions, explore conversations with AI that understands context and provides meaningful interactions. Perfect for entertainment, learning, and creative exploration.",
+      "category": "Conversational AI",
+      "category_slug": "conversational-ai",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/763b0b89-a87d-4498-2fe2-37c0f1a06900/Toolpage",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/763b0b89-a87d-4498-2fe2-37c0f1a06900/Toolpage",
+      "tool_url": "https://rushchat.ai",
+      "favouriteCount": 15,
+      "average_rating": 4.7,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "Multiple AI Personalities",
+        "Context-Aware Conversations",
+        "Customizable Characters",
+        "Learning Capabilities",
+        "Multi-Language Support",
+        "Conversation History"
+      ],
+      "pricing": [
+        {
+          "name": "Basic",
+          "price": "$0",
+          "period": "month",
+          "features": [
+            "5 characters",
+            "100 messages/day",
+            "Basic features"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$12.99",
+          "period": "month",
+          "features": [
+            "Unlimited characters",
+            "Unlimited messages",
+            "Advanced AI models",
+            "Priority support"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Language Learners",
+          "description": "Practice conversations in different languages with AI characters."
+        },
+        {
+          "title": "Writers",
+          "description": "Brainstorm ideas and develop characters through AI interactions."
+        }
+      ],
+      "tags": ["AI", "chat", "conversational-ai", "characters"]
+    },
+    {
+      "id": "extracta-ai",
+      "slug": "extracta-ai",
+      "tool_name": "Extracta.ai",
+      "headline": "Revolutionize Data Extraction with AI",
+      "description": "Extracta.ai uses cutting-edge AI technology to extract and structure data from documents, images, and PDFs automatically. Transform unstructured data into actionable insights with intelligent document processing, OCR technology, and automated data extraction. Perfect for businesses handling large volumes of documents.",
+      "category": "AI Assistant",
+      "category_slug": "ai-assistant",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/fff162b0-0637-4ac7-ee2b-11bb4c05a700/contentbanner",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/fff162b0-0637-4ac7-ee2b-11bb4c05a700/contentbanner",
+      "tool_url": "https://extracta.ai",
+      "favouriteCount": 7,
+      "average_rating": 4.4,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "AI-Powered OCR",
+        "Document Processing",
+        "Data Structuring",
+        "Multi-Format Support",
+        "Batch Processing",
+        "API Integration",
+        "High Accuracy",
+        "Cloud-Based"
+      ],
+      "pricing": [
+        {
+          "name": "Starter",
+          "price": "$29",
+          "period": "month",
+          "features": [
+            "1,000 pages/month",
+            "Basic extraction",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Business",
+          "price": "$99",
+          "period": "month",
+          "features": [
+            "10,000 pages/month",
+            "Advanced AI models",
+            "API access",
+            "Priority support"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Finance Teams",
+          "description": "Extract data from invoices, receipts, and financial documents automatically."
+        },
+        {
+          "title": "HR Departments",
+          "description": "Process resumes, applications, and employee documents efficiently."
+        }
+      ],
+      "tags": ["AI", "data-extraction", "OCR", "automation"]
+    },
+    {
+      "id": "bg-eraser",
+      "slug": "bg-eraser",
+      "tool_name": "Bg Eraser",
+      "headline": "Remove Backgrounds from Any Image Instantly",
+      "description": "BgEraser uses advanced AI to remove backgrounds from images in seconds. Perfect for e-commerce, content creation, and design work. Get professional results without manual editing. Supports batch processing, high-resolution images, and multiple export formats.",
+      "category": "Content Creation",
+      "category_slug": "content-creation",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/1802e69f-8c14-444e-9636-74b8cc028300/contentbanner",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/1802e69f-8c14-444e-9636-74b8cc028300/contentbanner",
+      "tool_url": "https://bgeraser.com",
+      "favouriteCount": 20,
+      "average_rating": 4.8,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "AI Background Removal",
+        "Batch Processing",
+        "High-Resolution Support",
+        "Edge Refinement",
+        "Multiple Export Formats",
+        "API Integration",
+        "Fast Processing",
+        "Cloud Storage"
+      ],
+      "pricing": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "period": "month",
+          "features": [
+            "10 images/month",
+            "Standard quality",
+            "Watermark"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$9.99",
+          "period": "month",
+          "features": [
+            "Unlimited images",
+            "High quality",
+            "No watermark",
+            "Batch processing",
+            "API access"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "E-commerce",
+          "description": "Create professional product images with clean backgrounds for online stores."
+        },
+        {
+          "title": "Designers",
+          "description": "Quickly remove backgrounds for design projects and compositions."
+        },
+        {
+          "title": "Marketers",
+          "description": "Prepare marketing materials with polished, background-free images."
+        }
+      ],
+      "tags": ["image-editing", "background-removal", "AI", "design"]
+    },
+    {
+      "id": "11cast",
+      "slug": "11cast",
+      "tool_name": "11Cast",
+      "headline": "Revolutionize Your Podcast Production with AI",
+      "description": "11Cast is an AI-powered podcast production platform that automates editing, enhances audio quality, and generates transcriptions. From noise reduction to automatic chapter markers, 11Cast streamlines your entire podcast workflow. Perfect for podcasters who want professional results without spending hours on editing.",
+      "category": "Content Creation",
+      "category_slug": "content-creation",
+      "thumbnail_image": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/47a1d8f6-fd3a-4779-e14c-75bdb8369800/Toolpage",
+      "icon": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/47a1d8f6-fd3a-4779-e14c-75bdb8369800/Toolpage",
+      "tool_url": "https://11cast.com",
+      "favouriteCount": 18,
+      "average_rating": 4.6,
+      "review_count": 0,
+      "last_updated": "2026-01-06",
+      "features": [
+        "AI Audio Editing",
+        "Noise Reduction",
+        "Auto Transcription",
+        "Chapter Markers",
+        "Voice Enhancement",
+        "Multi-Track Support",
+        "Export Options",
+        "Cloud Collaboration"
+      ],
+      "pricing": [
+        {
+          "name": "Creator",
+          "price": "$15",
+          "period": "month",
+          "features": [
+            "10 hours/month",
+            "AI editing",
+            "Transcription",
+            "Basic features"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$49",
+          "period": "month",
+          "features": [
+            "Unlimited hours",
+            "Advanced AI tools",
+            "Multi-track editing",
+            "Priority support",
+            "Team collaboration"
+          ]
+        }
+      ],
+      "use_cases": [
+        {
+          "title": "Podcasters",
+          "description": "Automate podcast editing and produce professional episodes faster."
+        },
+        {
+          "title": "Content Creators",
+          "description": "Create high-quality audio content for videos and social media."
+        },
+        {
+          "title": "Educators",
+          "description": "Produce educational audio content with professional quality."
+        }
+      ],
+      "tags": ["podcast", "audio-editing", "AI", "content-creation"]
+    }
+  ]
+}
