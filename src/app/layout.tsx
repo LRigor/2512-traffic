@@ -35,7 +35,7 @@ export default function RootLayout({
         <ToastProvider>
           <Header />
           <BannerWrapper />
-          <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
+          <div className="min-h-screen bg-white font-sans dark:bg-black">
             <main className="container mx-auto px-4 pt-24 max-w-6xl">
               {children}
             </main>
