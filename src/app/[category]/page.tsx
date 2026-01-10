@@ -12,21 +12,39 @@ import {
 export async function generateStaticParams() {
   try {
     const categories = getAllCategories();
+    console.log('Categories loaded:', categories);
+    
     // Ensure we return valid params for static export
     if (!categories || categories.length === 0) {
+      console.warn('No categories found! Returning empty array.');
       return [];
     }
+    
     const params = categories
       .filter((item) => item.id && typeof item.id === "string" && item.id.trim() !== "")
       .map((item) => ({
         category: item.id.trim(),
       }));
     
-    // Ensure we always return an array
-    return params.length > 0 ? params : [];
+    console.log('Generated params:', params);
+    
+    // Ensure we always return an array with at least one fallback
+    if (params.length === 0) {
+      console.warn('No valid params generated, adding fallback');
+      return [{ category: 'ai-assistant' }];
+    }
+    
+    return params;
   } catch (error) {
     console.error("Error generating static params for categories:", error);
-    return [];
+    // Return a fallback to prevent build failure
+    return [
+      { category: 'ai-assistant' },
+      { category: 'content-creation' },
+      { category: 'education' },
+      { category: 'image-generation' },
+      { category: 'conversational-ai' },
+    ];
   }
 }
 

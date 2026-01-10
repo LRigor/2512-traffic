@@ -48,7 +48,7 @@ export default function Banner() {
           height={100}
           className="w-12 h-20 flex-shrink-0"
           style={{
-            transform: "rotate(12deg)",
+            transform: "rotate(-12deg)",
           }}
         />
       </div>
