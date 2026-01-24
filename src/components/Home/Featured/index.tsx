@@ -58,12 +58,13 @@ const Featured = () => {
                 </div>
 
                 {/* Votes */}
-                <button className="flex items-center gap-1 text-gray-500 border border-gray-200 rounded-lg px-3 py-1.5 hover:bg-gray-50 transition-colors">
-                 <Image
+                <button className="flex items-center gap-1 text-gray-500 border border-gray-200 rounded-lg px-3 py-1.5 hover:bg-gray-50 hover:border-[#e94560] hover:text-[#e94560] transition-all duration-300 group">
+                  <Image
                     src="/up-arrow-blank.svg"
                     alt="Upvote"
                     width={16}
                     height={16}
+                    className="animate-bounce group-hover:scale-110 transition-all duration-300 group-active:scale-95"
                   />
                   <span className="text-sm font-medium">{item.votes}</span>
                 </button>

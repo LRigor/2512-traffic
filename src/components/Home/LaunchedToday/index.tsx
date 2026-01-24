@@ -39,9 +39,9 @@ const LaunchedToday = () => {
                     <h4 className="font-semibold text-gray-900 truncate">
                       {item.name}
                     </h4>
-                    {/* <span className="flex-shrink-0 text-xs font-medium text-white bg-[#e94560] rounded px-3 py-1">
+                    <span className="flex-shrink-0 text-xs font-medium text-white bg-[#e94560] rounded px-3 py-1">
                       Today
-                    </span> */}
+                    </span>
                   </div>
                   <p className="text-sm text-gray-600 line-clamp-2">
                     {item.description}

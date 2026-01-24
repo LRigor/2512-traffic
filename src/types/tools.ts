@@ -24,6 +24,8 @@ export interface Tool {
   average_rating: number | null;
   review_count?: number;
   favouriteCount: number;
+  monthFavourites?: number;
+  todayFavourites?: number;
   features?: string[];
   pricing_plans?: PricingPlan[];
   last_updated?: string;
