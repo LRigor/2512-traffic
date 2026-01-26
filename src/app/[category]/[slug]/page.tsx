@@ -19,7 +19,6 @@ import StarRating from "@/components/StarRating";
 import {
   getCategoryData,
   getCategoryName,
-  getAllTools,
   getAllCategories,
 } from "@/lib/category-data";
 import type { Tool } from "@/types/tools";
@@ -98,7 +97,6 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
   }
 
   const categoryName = getCategoryName(category) || category;
-  const allTools = getAllTools();
 
   // Ensure tool has category_slug for breadcrumb
   const toolWithCategory = {
@@ -191,7 +189,7 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
       <Tags tool={toolWithCategory} />
       <Share />
       <Reviews />
-      <Alternatives tool={toolWithCategory} allTools={allTools} />
+      <Alternatives tool={toolWithCategory} />
       <UseCases tool={toolWithCategory} />
     </>
   );
