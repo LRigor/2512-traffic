@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { getAllCategories, getCategoryData } from "@/lib/category-data";
 import type { Tool } from "@/types/tools";
+import { RankingsListSkeleton } from "@/components/ui/Skeleton";
 
 interface RankingsListProps {
   period: "all-time" | "this-month" | "this-week" | "free" | "paid";
@@ -165,12 +166,7 @@ export default function RankingsList({ period }: RankingsListProps) {
   };
 
   if (loading) {
-    return (
-      <div className="text-center py-12">
-        <div className="inline-block w-8 h-8 border-4 border-[#e94560] border-t-transparent rounded-full animate-spin"></div>
-        <p className="text-gray-600 dark:text-gray-400 mt-4">Loading rankings...</p>
-      </div>
-    );
+    return <RankingsListSkeleton count={period === "all-time" ? 20 : 10} />;
   }
 
   return (

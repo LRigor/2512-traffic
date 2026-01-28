@@ -1,10 +1,28 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import homeData from '@/data/home.json';
 import StarRating from "@/components/StarRating";
+import { FeaturedSkeleton } from "@/components/ui/Skeleton";
 
 const Featured = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const { featured } = homeData;
+
+  useEffect(() => {
+    // 模拟短暂的加载状态，确保骨架屏显示
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <FeaturedSkeleton />;
+  }
 
   return (
     <section className="bg-white  px-6 -mt-12">

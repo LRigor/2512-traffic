@@ -1,9 +1,27 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import homeData from '@/data/home.json';
+import { LaunchedTodaySkeleton } from "@/components/ui/Skeleton";
 
 const LaunchedToday = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const { launchedToday } = homeData;
+
+  useEffect(() => {
+    // 模拟短暂的加载状态，确保骨架屏显示
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <LaunchedTodaySkeleton />;
+  }
 
   return (
     <section className="bg-white py-10 px-6">
