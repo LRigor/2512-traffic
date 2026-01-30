@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { trackEvent } from "@/utils/umami";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -12,20 +13,26 @@ const Footer = () => {
     return null;
   }
 
+  // 处理链接点击事件
+  const handleLinkClick = (linkName: string, linkUrl: string) => {
+    trackEvent("footer_link_click", {
+      link_name: linkName,
+      link_url: linkUrl,
+    });
+  };
+
   return (
     <footer className="bg-[#1a1625] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
           <div>
-            <Link href="/" className="inline-block mb-4">
               <Image
                 src="/images/logo.svg"
                 alt="OpenTools"
                 width={150}
                 height={40}
               />
-            </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Elevate your game with AI tools that redefine possibility.
             </p>
@@ -39,6 +46,7 @@ const Footer = () => {
                 <Link
                   href="/about"
                   className="text-sm hover:underline"
+                  onClick={() => handleLinkClick("About Us", "/about")}
                 >
                   About Us
                 </Link>
@@ -47,6 +55,7 @@ const Footer = () => {
                 <Link
                   href="/privacy"
                   className="text-sm hover:underline"
+                  onClick={() => handleLinkClick("Privacy Policy", "/privacy")}
                 >
                   Privacy Policy
                 </Link>
@@ -55,6 +64,7 @@ const Footer = () => {
                 <Link
                   href="/terms"
                   className="text-sm hover:underline"
+                  onClick={() => handleLinkClick("Terms of Service", "/terms")}
                 >
                   Terms of Service
                 </Link>
@@ -70,6 +80,7 @@ const Footer = () => {
                 <Link
                   href="/help"
                   className="text-sm hover:underline"
+                  onClick={() => handleLinkClick("Help Center", "/help")}
                 >
                   Help Center
                 </Link>
@@ -78,6 +89,7 @@ const Footer = () => {
                 <Link
                   href="/faq"
                   className="text-sm hover:underline"
+                  onClick={() => handleLinkClick("FAQs", "/faq")}
                 >
                   FAQs
                 </Link>
@@ -86,6 +98,7 @@ const Footer = () => {
                 <Link
                   href="/contact"
                   className="text-sm hover:underline"
+                  onClick={() => handleLinkClick("Contact Us", "/contact")}
                 >
                   Contact Us
                 </Link>
@@ -99,7 +112,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <p className="text-gray-400 text-sm">
-            © 2026 OpenTools - 保留所有权利。
+            © 2026 OpenTools - All rights reserved.
           </p>
         </div>
       </div>

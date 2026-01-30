@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import BannerWrapper from "@/components/BannerWrapper";
 import { ToastProvider } from "@/contexts/ToastContext";
 import ToastContainer from "@/components/ui/Toast";
+import UmamiAnalytics from "@/components/UmamiAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ToastProvider>
+          <UmamiAnalytics />
           <Header />
           <BannerWrapper />
           <div className="min-h-screen bg-white font-sans dark:bg-black">

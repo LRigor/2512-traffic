@@ -23,13 +23,13 @@ export default function RankingsPage() {
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
         
-        <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 mb-6">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 mb-6">
             {/* 左侧图标 */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-[#e94560] to-[#c23a52] rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-[#e94560] to-[#c23a52] rounded-2xl flex items-center justify-center shadow-2xl shadow-[#e94560]/30 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-11 h-11 md:w-14 md:h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-[#e94560] to-[#c23a52] rounded-2xl flex items-center justify-center shadow-2xl shadow-[#e94560]/30 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-9 h-9 sm:w-11 sm:h-11 md:w-14 md:h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
                 {/* 脉冲光晕 */}
@@ -39,19 +39,19 @@ export default function RankingsPage() {
             
             {/* 中间内容 */}
             <div className="flex-1">
-              <div className="flex flex-wrap items-center gap-3 mb-3">
-                <h1 className="text-5xl md:text-6xl font-black text-black dark:text-zinc-50 tracking-tight">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
+                <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text-black dark:text-zinc-50 tracking-tight">
                   AI Tools Rankings
                 </h1>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#e94560]/10 border border-[#e94560]/30 rounded-full">
-                  <div className="w-2 h-2 bg-[#e94560] rounded-full animate-pulse"></div>
-                  <span className="text-sm font-bold text-[#e94560]">LIVE</span>
+                <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 bg-[#e94560]/10 border border-[#e94560]/30 rounded-full">
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#e94560] rounded-full animate-pulse"></div>
+                  <span className="text-xs sm:text-sm font-bold text-[#e94560]">LIVE</span>
                 </div>
               </div>
-              <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mb-4 leading-relaxed">
                 Discover the best AI tools ranked by popularity, user ratings, and usage.
               </p>
-              <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -82,37 +82,37 @@ export default function RankingsPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
         {/* Ranking Tabs */}
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-3">
+        <div className="mb-6 sm:mb-8">
+          <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
               href="/rankings"
-              className="px-6 py-3 rounded-lg font-medium transition-all bg-[#e94560] text-white shadow-lg"
+              className="px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all bg-[#e94560] text-white shadow-lg"
             >
               🏆 All Time
             </Link>
             <Link
               href="/rankings/this-month"
-              className="px-6 py-3 rounded-lg font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
+              className="px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
             >
               📅 This Month
             </Link>
             <Link
               href="/rankings/this-week"
-              className="px-6 py-3 rounded-lg font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
+              className="px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
             >
               🔥 This Week
             </Link>
             <Link
               href="/rankings/free"
-              className="px-6 py-3 rounded-lg font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
+              className="px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
             >
               🆓 Free Tools
             </Link>
             <Link
               href="/rankings/paid"
-              className="px-6 py-3 rounded-lg font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
+              className="px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition-all bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-zinc-700 hover:border-[#e94560] hover:text-[#e94560]"
             >
               💎 Paid Tools
             </Link>

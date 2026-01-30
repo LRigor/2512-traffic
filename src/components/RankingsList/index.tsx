@@ -122,38 +122,38 @@ export default function RankingsList({ period }: RankingsListProps) {
     switch (period) {
       case "all-time":
         // All-Time: 经典圆角方形，金银铜渐变 + 大数字
-        if (index === 0) return `${baseStyle} ${pulseClass} w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 text-white text-2xl md:text-4xl`;
-        if (index === 1) return `${baseStyle} ${pulseClass} w-14 h-14 md:w-18 md:h-18 rounded-2xl bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white text-xl md:text-3xl`;
-        if (index === 2) return `${baseStyle} ${pulseClass} w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 text-white text-xl md:text-3xl`;
-        return `${baseStyle} w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-900 text-purple-700 dark:text-purple-300 text-lg md:text-2xl border-2 border-purple-300 dark:border-purple-700`;
+        if (index === 0) return `${baseStyle} ${pulseClass} w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 text-white text-xl sm:text-2xl md:text-4xl`;
+        if (index === 1) return `${baseStyle} ${pulseClass} w-11 h-11 sm:w-14 sm:h-14 md:w-18 md:h-18 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white text-lg sm:text-xl md:text-3xl`;
+        if (index === 2) return `${baseStyle} ${pulseClass} w-11 h-11 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 text-white text-lg sm:text-xl md:text-3xl`;
+        return `${baseStyle} w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-900 text-purple-700 dark:text-purple-300 text-base sm:text-lg md:text-2xl border-2 border-purple-300 dark:border-purple-700`;
       
       case "this-month":
         // This Month: 大圆形徽章，蓝色系 + 超大数字
-        if (index === 0) return `${baseStyle} ${pulseClass} w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-3xl md:text-5xl ring-4 md:ring-6 ring-blue-200 dark:ring-blue-800`;
-        if (index === 1) return `${baseStyle} ${pulseClass} w-18 h-18 md:w-22 md:h-22 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 text-white text-2xl md:text-4xl ring-4 ring-cyan-200 dark:ring-cyan-800`;
-        if (index === 2) return `${baseStyle} ${pulseClass} w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-sky-400 to-sky-600 text-white text-2xl md:text-3xl ring-4 ring-sky-200 dark:ring-sky-800`;
-        return `${baseStyle} w-12 h-12 md:w-16 md:h-16 rounded-full bg-white dark:bg-zinc-800 text-blue-700 dark:text-blue-300 text-lg md:text-2xl border-2 border-blue-300 dark:border-blue-700 font-extrabold`;
+        if (index === 0) return `${baseStyle} ${pulseClass} w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white text-2xl sm:text-3xl md:text-5xl ring-2 sm:ring-4 md:ring-6 ring-blue-200 dark:ring-blue-800`;
+        if (index === 1) return `${baseStyle} ${pulseClass} w-14 h-14 sm:w-18 sm:h-18 md:w-22 md:h-22 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 text-white text-xl sm:text-2xl md:text-4xl ring-2 sm:ring-4 ring-cyan-200 dark:ring-cyan-800`;
+        if (index === 2) return `${baseStyle} ${pulseClass} w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-sky-400 to-sky-600 text-white text-lg sm:text-2xl md:text-3xl ring-2 sm:ring-4 ring-sky-200 dark:ring-sky-800`;
+        return `${baseStyle} w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full bg-white dark:bg-zinc-800 text-blue-700 dark:text-blue-300 text-base sm:text-lg md:text-2xl border-2 border-blue-300 dark:border-blue-700 font-extrabold`;
       
       case "this-week":
         // This Week: 六边形旋转风格，火焰色系 + 旋转数字
-        if (index === 0) return `${baseStyle} ${pulseClass} w-20 h-20 md:w-24 md:h-24 rounded-2xl rotate-45 bg-gradient-to-br from-red-500 via-orange-500 to-pink-600 text-white text-3xl md:text-5xl`;
-        if (index === 1) return `${baseStyle} ${pulseClass} w-18 h-18 md:w-22 md:h-22 rounded-2xl rotate-45 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-600 text-white text-2xl md:text-4xl`;
-        if (index === 2) return `${baseStyle} ${pulseClass} w-16 h-16 md:w-20 md:h-20 rounded-2xl rotate-45 bg-gradient-to-br from-yellow-500 via-orange-500 to-red-600 text-white text-2xl md:text-3xl`;
-        return `${baseStyle} w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-800 dark:to-red-800 text-orange-700 dark:text-orange-300 text-lg md:text-2xl`;
+        if (index === 0) return `${baseStyle} ${pulseClass} w-10 h-10 sm:w-14 sm:h-14 md:w-24 md:h-24 rounded-lg sm:rounded-xl md:rounded-2xl rotate-45 bg-gradient-to-br from-red-500 via-orange-500 to-pink-600 text-white text-lg sm:text-xl md:text-5xl`;
+        if (index === 1) return `${baseStyle} ${pulseClass} w-9 h-9 sm:w-12 sm:h-12 md:w-22 md:h-22 rounded-lg sm:rounded-xl md:rounded-2xl rotate-45 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-600 text-white text-base sm:text-lg md:text-4xl`;
+        if (index === 2) return `${baseStyle} ${pulseClass} w-9 h-9 sm:w-11 sm:h-11 md:w-20 md:h-20 rounded-lg sm:rounded-xl md:rounded-2xl rotate-45 bg-gradient-to-br from-yellow-500 via-orange-500 to-red-600 text-white text-sm sm:text-base md:text-3xl`;
+        return `${baseStyle} w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-800 dark:to-red-800 text-orange-700 dark:text-orange-300 text-xs sm:text-sm md:text-2xl`;
       
       case "free":
         // Free: 圆角正方形，绿色清新 + 边框数字
-        if (index === 0) return `${baseStyle} ${pulseClass} w-16 h-16 md:w-20 md:h-20 rounded-xl bg-gradient-to-br from-green-400 to-emerald-600 text-white text-2xl md:text-4xl shadow-green-500/50 border-4 border-green-200`;
-        if (index === 1) return `${baseStyle} ${pulseClass} w-14 h-14 md:w-18 md:h-18 rounded-xl bg-gradient-to-br from-teal-400 to-green-600 text-white text-xl md:text-3xl shadow-teal-500/50 border-4 border-teal-200`;
-        if (index === 2) return `${baseStyle} ${pulseClass} w-14 h-14 md:w-16 md:h-16 rounded-xl bg-gradient-to-br from-lime-400 to-green-600 text-white text-xl md:text-3xl shadow-lime-500/50 border-4 border-lime-200`;
-        return `${baseStyle} w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white dark:bg-green-900/30 text-green-700 dark:text-green-300 text-lg md:text-2xl border-2 border-green-400 dark:border-green-600`;
+        if (index === 0) return `${baseStyle} ${pulseClass} w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-lg sm:rounded-xl bg-gradient-to-br from-green-400 to-emerald-600 text-white text-xl sm:text-2xl md:text-4xl shadow-green-500/50 border-2 sm:border-4 border-green-200`;
+        if (index === 1) return `${baseStyle} ${pulseClass} w-11 h-11 sm:w-14 sm:h-14 md:w-18 md:h-18 rounded-lg sm:rounded-xl bg-gradient-to-br from-teal-400 to-green-600 text-white text-lg sm:text-xl md:text-3xl shadow-teal-500/50 border-2 sm:border-4 border-teal-200`;
+        if (index === 2) return `${baseStyle} ${pulseClass} w-11 h-11 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg sm:rounded-xl bg-gradient-to-br from-lime-400 to-green-600 text-white text-lg sm:text-xl md:text-3xl shadow-lime-500/50 border-2 sm:border-4 border-lime-200`;
+        return `${baseStyle} w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg bg-white dark:bg-green-900/30 text-green-700 dark:text-green-300 text-base sm:text-lg md:text-2xl border-2 border-green-400 dark:border-green-600`;
       
       case "paid":
         // Paid: 豪华钻石形状，金色奢华 + 超大数字 + 强阴影
-        if (index === 0) return `${baseStyle} ${pulseClass} w-20 h-20 md:w-28 md:h-28 rounded-2xl bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 text-white text-3xl md:text-6xl shadow-2xl shadow-amber-500/60 border-[3px] border-yellow-300`;
-        if (index === 1) return `${baseStyle} ${pulseClass} w-18 h-18 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 text-white text-2xl md:text-5xl shadow-xl shadow-yellow-500/50 border-[3px] border-amber-300`;
-        if (index === 2) return `${baseStyle} ${pulseClass} w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-orange-300 via-amber-400 to-orange-500 text-white text-2xl md:text-4xl shadow-lg shadow-orange-500/40 border-[3px] border-orange-300`;
-        return `${baseStyle} w-12 h-12 md:w-16 md:h-16 rounded-xl bg-gradient-to-br from-amber-50 to-yellow-100 dark:from-amber-900/40 dark:to-yellow-900/40 text-amber-700 dark:text-amber-300 text-lg md:text-2xl border-2 border-amber-400 dark:border-amber-600`;
+        if (index === 0) return `${baseStyle} ${pulseClass} w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-xl sm:rounded-2xl bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 text-white text-2xl sm:text-3xl md:text-6xl shadow-2xl shadow-amber-500/60 border-2 sm:border-[3px] border-yellow-300`;
+        if (index === 1) return `${baseStyle} ${pulseClass} w-14 h-14 sm:w-18 sm:h-18 md:w-24 md:h-24 rounded-xl sm:rounded-2xl bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 text-white text-xl sm:text-2xl md:text-5xl shadow-xl shadow-yellow-500/50 border-2 sm:border-[3px] border-amber-300`;
+        if (index === 2) return `${baseStyle} ${pulseClass} w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-300 via-amber-400 to-orange-500 text-white text-lg sm:text-2xl md:text-4xl shadow-lg shadow-orange-500/40 border-2 sm:border-[3px] border-orange-300`;
+        return `${baseStyle} w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-lg sm:rounded-xl bg-gradient-to-br from-amber-50 to-yellow-100 dark:from-amber-900/40 dark:to-yellow-900/40 text-amber-700 dark:text-amber-300 text-base sm:text-lg md:text-2xl border-2 border-amber-400 dark:border-amber-600`;
     }
   };
 
@@ -173,7 +173,7 @@ export default function RankingsList({ period }: RankingsListProps) {
     <>
       {/* Current Ranking Info - 5种完全不同的设计 */}
       {period === "all-time" && (
-        <div className="relative mb-8 overflow-hidden rounded-2xl bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50 dark:from-purple-900/20 dark:via-indigo-900/20 dark:to-purple-900/20 border-l-8 border-purple-500 p-8">
+        <div className="relative mb-6 sm:mb-8 overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50 dark:from-purple-900/20 dark:via-indigo-900/20 dark:to-purple-900/20 border-l-4 sm:border-l-8 border-purple-500 p-4 sm:p-6 md:p-8">
           {/* 装饰 */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-purple-400/20 rounded-full blur-3xl" />
           <div className="absolute -bottom-4 -right-4 text-purple-200/20 dark:text-purple-800/20">
@@ -182,19 +182,19 @@ export default function RankingsList({ period }: RankingsListProps) {
             </svg>
           </div>
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 mb-3 px-4 py-1.5 bg-purple-500/20 rounded-full">
-              <svg className="w-5 h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3 px-3 sm:px-4 py-1 sm:py-1.5 bg-purple-500/20 rounded-full">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
-              <span className="text-sm font-semibold text-purple-700 dark:text-purple-300">LEGENDARY</span>
+              <span className="text-xs sm:text-sm font-semibold text-purple-700 dark:text-purple-300">LEGENDARY</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black mb-3 text-gray-900 dark:text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-2 sm:mb-3 text-gray-900 dark:text-white tracking-tight">
               {getTitle()}
             </h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-2 max-w-3xl">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 mb-1.5 sm:mb-2 max-w-3xl">
               {getDescription()}
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">
               📊 Showing top {tools.length} tools
             </p>
           </div>
@@ -202,22 +202,22 @@ export default function RankingsList({ period }: RankingsListProps) {
       )}
 
       {period === "this-month" && (
-        <div className="relative mb-10 overflow-hidden rounded-3xl bg-gradient-to-br from-blue-100 via-cyan-50 to-sky-100 dark:from-blue-900/30 dark:via-cyan-900/20 dark:to-sky-900/30 border-4 border-blue-400 dark:border-blue-600 p-10 text-center">
+        <div className="relative mb-6 sm:mb-10 overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-blue-100 via-cyan-50 to-sky-100 dark:from-blue-900/30 dark:via-cyan-900/20 dark:to-sky-900/30 border-2 sm:border-4 border-blue-400 dark:border-blue-600 p-6 sm:p-8 md:p-10 text-center">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/30 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-cyan-400/20 rounded-full blur-3xl" />
           <div className="relative z-10">
-            <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-blue-500 rounded-2xl shadow-lg shadow-blue-500/50">
-              <svg className="w-9 h-9 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 bg-blue-500 rounded-xl sm:rounded-2xl shadow-lg shadow-blue-500/50">
+              <svg className="w-7 h-7 sm:w-9 sm:h-9 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
               </svg>
             </div>
-            <h2 className="text-4xl md:text-6xl font-extrabold mb-4 text-blue-900 dark:text-blue-100 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-extrabold mb-3 sm:mb-4 text-blue-900 dark:text-blue-100 tracking-tight">
               {getTitle()}
             </h2>
-            <p className="text-xl text-blue-800 dark:text-blue-200 mb-3 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-xl text-blue-800 dark:text-blue-200 mb-2 sm:mb-3 max-w-2xl mx-auto leading-relaxed">
               {getDescription()}
             </p>
-            <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-500 text-white rounded-full font-bold text-sm">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-1.5 sm:py-2 bg-blue-500 text-white rounded-full font-bold text-xs sm:text-sm">
               <span>📈</span>
               <span>Top {tools.length} trending this month</span>
             </div>
@@ -226,34 +226,34 @@ export default function RankingsList({ period }: RankingsListProps) {
       )}
 
       {period === "this-week" && (
-        <div className="relative mb-8 overflow-hidden">
+        <div className="relative mb-8 sm:mb-10 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 opacity-10 dark:opacity-20 animate-pulse" />
-          <div className="relative bg-gradient-to-tr from-orange-50 via-red-50 to-yellow-50 dark:from-orange-900/20 dark:via-red-900/20 dark:to-yellow-900/20 border-2 border-dashed border-orange-500 dark:border-orange-600 rounded-xl p-6 transform hover:scale-[1.01] transition-transform">
-            <div className="flex items-start gap-4">
+          <div className="relative bg-gradient-to-tr from-orange-50 via-red-50 to-yellow-50 dark:from-orange-900/20 dark:via-red-900/20 dark:to-yellow-900/20 border-2 border-dashed border-orange-500 dark:border-orange-600 rounded-lg sm:rounded-xl p-4 sm:p-6 transform hover:scale-[1.01] transition-transform">
+            <div className="flex items-start gap-3 sm:gap-4">
               <div className="shrink-0">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-orange-500 rounded-2xl blur-xl opacity-50 animate-pulse" />
-                  <div className="relative flex items-center justify-center w-20 h-20 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl shadow-xl">
-                    <svg className="w-11 h-11 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="absolute inset-0 bg-orange-500 rounded-xl sm:rounded-2xl blur-xl opacity-50 animate-pulse" />
+                  <div className="relative flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-red-500 to-orange-600 rounded-xl sm:rounded-2xl shadow-xl">
+                    <svg className="w-8 h-8 sm:w-11 sm:h-11 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
                     </svg>
                   </div>
                 </div>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="inline-flex items-center gap-1 px-3 py-1 bg-red-500 text-white text-xs font-bold rounded uppercase tracking-wide animate-pulse">
+                <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-2.5">
+                  <span className="inline-flex items-center gap-0.5 sm:gap-1 px-2 sm:px-3 py-0.5 sm:py-1 bg-red-500 text-white text-[10px] sm:text-xs font-bold rounded uppercase tracking-wide animate-pulse">
                     🔥 HOT
                   </span>
-                  <span className="text-xs text-orange-700 dark:text-orange-300 font-semibold">This Week</span>
+                  <span className="text-[10px] sm:text-xs text-orange-700 dark:text-orange-300 font-semibold">This Week</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-black mb-2 text-gray-900 dark:text-white">
+                <h2 className="text-xl sm:text-2xl md:text-4xl font-black mb-2 sm:mb-2.5 text-gray-900 dark:text-white">
                   {getTitle()}
                 </h2>
-                <p className="text-base text-gray-700 dark:text-gray-300 mb-2">
+                <p className="text-xs sm:text-sm md:text-base text-gray-700 dark:text-gray-300 mb-2 sm:mb-2.5">
                   {getDescription()}
                 </p>
-                <p className="text-sm text-orange-700 dark:text-orange-400 font-bold">
+                <p className="text-[10px] sm:text-xs md:text-sm text-orange-700 dark:text-orange-400 font-bold">
                   ⚡ {tools.length} hottest tools right now
                 </p>
               </div>
@@ -263,26 +263,26 @@ export default function RankingsList({ period }: RankingsListProps) {
       )}
 
       {period === "free" && (
-        <div className="relative mb-8 overflow-hidden rounded-2xl bg-white dark:bg-zinc-900 border-2 border-green-300 dark:border-green-700 shadow-lg shadow-green-500/20">
+        <div className="relative mb-6 sm:mb-8 overflow-hidden rounded-xl sm:rounded-2xl bg-white dark:bg-zinc-900 border-2 border-green-300 dark:border-green-700 shadow-lg shadow-green-500/20">
           <div className="absolute inset-0 bg-gradient-to-r from-green-50/80 to-emerald-50/80 dark:from-green-900/10 dark:to-emerald-900/10" />
-          <div className="relative flex flex-col md:flex-row items-start md:items-center gap-6 p-8">
-            <div className="shrink-0 flex items-center justify-center w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-600 rounded-3xl shadow-xl shadow-green-500/40 transform -rotate-6">
-              <svg className="w-14 h-14 text-white transform rotate-6" fill="currentColor" viewBox="0 0 20 20">
+          <div className="relative flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6 p-4 sm:p-6 md:p-8">
+            <div className="shrink-0 flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-green-400 to-emerald-600 rounded-2xl sm:rounded-3xl shadow-xl shadow-green-500/40 transform -rotate-6">
+              <svg className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 text-white transform rotate-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
             </div>
             <div className="flex-1">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-600 rounded-lg">
-                <span className="text-2xl">🎁</span>
-                <span className="text-sm font-bold text-green-700 dark:text-green-300">100% FREE</span>
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 mb-2 sm:mb-3 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-600 rounded-lg">
+                <span className="text-xl sm:text-2xl">🎁</span>
+                <span className="text-xs sm:text-sm font-bold text-green-700 dark:text-green-300">100% FREE</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-2 text-gray-900 dark:text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-1.5 sm:mb-2 text-gray-900 dark:text-white">
                 {getTitle()}
               </h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 mb-1.5 sm:mb-2">
                 {getDescription()}
               </p>
-              <p className="text-sm text-green-700 dark:text-green-400 font-semibold">
+              <p className="text-xs sm:text-sm text-green-700 dark:text-green-400 font-semibold">
                 ✨ {tools.length} completely free tools available
               </p>
             </div>
@@ -291,32 +291,32 @@ export default function RankingsList({ period }: RankingsListProps) {
       )}
 
       {period === "paid" && (
-        <div className="relative mb-10 overflow-hidden rounded-3xl bg-gradient-to-br from-amber-100 via-yellow-100 to-orange-100 dark:from-amber-900/30 dark:via-yellow-900/20 dark:to-orange-900/30 border-[4px] border-amber-500 dark:border-amber-600 shadow-2xl shadow-amber-500/50 p-12">
+        <div className="relative mb-6 sm:mb-10 overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-amber-100 via-yellow-100 to-orange-100 dark:from-amber-900/30 dark:via-yellow-900/20 dark:to-orange-900/30 border-2 sm:border-[4px] border-amber-500 dark:border-amber-600 shadow-2xl shadow-amber-500/50 p-6 sm:p-8 md:p-12">
           <div className="absolute top-0 right-0 w-80 h-80 bg-amber-400/20 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-400/20 rounded-full blur-3xl" />
           <div className="absolute -top-2 -right-2 w-24 h-24 bg-yellow-300/30 rounded-full blur-2xl animate-pulse" />
           <div className="absolute -bottom-2 -left-2 w-32 h-32 bg-orange-300/30 rounded-full blur-2xl animate-pulse" />
           <div className="relative z-10">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 rounded-2xl shadow-lg shadow-amber-500/60 transform rotate-12">
-                <svg className="w-8 h-8 text-white transform -rotate-12" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 rounded-xl sm:rounded-2xl shadow-lg shadow-amber-500/60 transform rotate-12">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white transform -rotate-12" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
                 </svg>
               </div>
-              <div className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full shadow-lg">
-                <span className="text-2xl">💎</span>
-                <span className="text-sm font-black uppercase tracking-wide">PREMIUM</span>
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-1.5 sm:py-2 bg-gradient-to-r from-amber-500 to-yellow-500 text-white rounded-full shadow-lg">
+                <span className="text-xl sm:text-2xl">💎</span>
+                <span className="text-xs sm:text-sm font-black uppercase tracking-wide">PREMIUM</span>
               </div>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black mb-3 bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700 bg-clip-text text-transparent dark:from-amber-400 dark:via-yellow-300 dark:to-amber-400">
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-black mb-2 sm:mb-3 bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700 bg-clip-text text-transparent dark:from-amber-400 dark:via-yellow-300 dark:to-amber-400">
               {getTitle()}
             </h2>
-            <p className="text-xl text-amber-900 dark:text-amber-200 mb-3 max-w-3xl font-medium">
+            <p className="text-sm sm:text-base md:text-xl text-amber-900 dark:text-amber-200 mb-2 sm:mb-3 max-w-3xl font-medium">
               {getDescription()}
             </p>
-            <div className="flex items-center gap-2">
-              <span className="text-3xl">👑</span>
-              <p className="text-base text-amber-800 dark:text-amber-300 font-bold">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="text-2xl sm:text-3xl">👑</span>
+              <p className="text-xs sm:text-sm md:text-base text-amber-800 dark:text-amber-300 font-bold">
                 {tools.length} premium tools • Best investment for professionals
               </p>
             </div>
@@ -326,66 +326,66 @@ export default function RankingsList({ period }: RankingsListProps) {
 
       {/* 统计数据卡片 - 5种完全不同的设计 */}
       {period === "all-time" && (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-2xl p-6 md:p-8 border border-blue-200 dark:border-blue-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 mb-4 sm:mb-8">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg sm:rounded-xl md:rounded-2xl p-2.5 sm:p-4 md:p-8 border border-blue-200 dark:border-blue-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
             <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent dark:from-white/5 dark:to-transparent" />
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/20 dark:bg-black/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="mb-3">
-                <span className="text-3xl md:text-4xl">👥</span>
+              <div className="mb-1 sm:mb-3">
+                <span className="text-lg sm:text-2xl md:text-4xl">👥</span>
               </div>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-blue-900 dark:text-blue-100">
+              <div className="text-xl sm:text-2xl md:text-5xl font-black mb-0.5 sm:mb-2 text-blue-900 dark:text-blue-100">
                 {tools.length}
               </div>
-              <div className="text-sm md:text-base font-bold text-blue-700 dark:text-blue-300 opacity-80">
+              <div className="text-[10px] sm:text-xs md:text-base font-bold text-blue-700 dark:text-blue-300 opacity-80">
                 Total Tools
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-2xl p-6 md:p-8 border border-purple-200 dark:border-purple-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg sm:rounded-xl md:rounded-2xl p-2.5 sm:p-4 md:p-8 border border-purple-200 dark:border-purple-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
             <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent dark:from-white/5 dark:to-transparent" />
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/20 dark:bg-black/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="mb-3">
-                <span className="text-3xl md:text-4xl">⭐</span>
+              <div className="mb-1 sm:mb-3">
+                <span className="text-lg sm:text-2xl md:text-4xl">⭐</span>
               </div>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-purple-900 dark:text-purple-100">
+              <div className="text-xl sm:text-2xl md:text-5xl font-black mb-0.5 sm:mb-2 text-purple-900 dark:text-purple-100">
                 {tools.length > 0 ? (tools.reduce((sum, tool) => sum + (tool.average_rating || 0), 0) / tools.length).toFixed(1) : '0.0'}
               </div>
-              <div className="text-sm md:text-base font-bold text-purple-700 dark:text-purple-300 opacity-80">
+              <div className="text-[10px] sm:text-xs md:text-base font-bold text-purple-700 dark:text-purple-300 opacity-80">
                 Avg Rating
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/30 dark:to-pink-800/30 rounded-2xl p-6 md:p-8 border border-pink-200 dark:border-pink-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+          <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/30 dark:to-pink-800/30 rounded-lg sm:rounded-xl md:rounded-2xl p-2.5 sm:p-4 md:p-8 border border-pink-200 dark:border-pink-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
             <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent dark:from-white/5 dark:to-transparent" />
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/20 dark:bg-black/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="mb-3">
-                <span className="text-3xl md:text-4xl">❤️</span>
+              <div className="mb-1 sm:mb-3">
+                <span className="text-lg sm:text-2xl md:text-4xl">❤️</span>
               </div>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-pink-900 dark:text-pink-100">
+              <div className="text-xl sm:text-2xl md:text-5xl font-black mb-0.5 sm:mb-2 text-pink-900 dark:text-pink-100">
                 {tools.reduce((sum, tool) => sum + (tool.favouriteCount || 0), 0).toLocaleString()}
               </div>
-              <div className="text-sm md:text-base font-bold text-pink-700 dark:text-pink-300 opacity-80">
+              <div className="text-[10px] sm:text-xs md:text-base font-bold text-pink-700 dark:text-pink-300 opacity-80">
                 Total Likes
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/30 rounded-2xl p-6 md:p-8 border border-amber-200 dark:border-amber-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/30 rounded-lg sm:rounded-xl md:rounded-2xl p-2.5 sm:p-4 md:p-8 border border-amber-200 dark:border-amber-700 relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
             <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent dark:from-white/5 dark:to-transparent" />
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/20 dark:bg-black/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative z-10">
-              <div className="mb-3">
-                <span className="text-3xl md:text-4xl">📈</span>
+              <div className="mb-1 sm:mb-3">
+                <span className="text-lg sm:text-2xl md:text-4xl">📈</span>
               </div>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-amber-900 dark:text-amber-100">
+              <div className="text-xl sm:text-2xl md:text-5xl font-black mb-0.5 sm:mb-2 text-amber-900 dark:text-amber-100">
                 {new Set(tools.map(t => t.category)).size}
               </div>
-              <div className="text-sm md:text-base font-bold text-amber-700 dark:text-amber-300 opacity-80">
+              <div className="text-[10px] sm:text-xs md:text-base font-bold text-amber-700 dark:text-amber-300 opacity-80">
                 Categories
               </div>
             </div>
@@ -394,62 +394,62 @@ export default function RankingsList({ period }: RankingsListProps) {
       )}
 
       {period === "this-month" && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7 mb-10">
-          <div className="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/40 dark:to-blue-800/40 rounded-3xl p-8 md:p-10 border-3 border-blue-400 dark:border-blue-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 md:gap-7 mb-6 sm:mb-10">
+          <div className="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/40 dark:to-blue-800/40 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-10 border-2 sm:border-3 border-blue-400 dark:border-blue-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/30 dark:bg-black/30 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500" />
             <div className="relative z-10 text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-blue-500/20 group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-4xl">👥</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2 sm:mb-3 md:mb-4 rounded-xl sm:rounded-2xl bg-blue-500/20 group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-2xl sm:text-3xl md:text-4xl">👥</span>
               </div>
-              <div className="text-5xl md:text-6xl font-black mb-3 text-blue-900 dark:text-blue-100 tracking-tight">
+              <div className="text-2xl sm:text-3xl md:text-6xl font-black mb-1.5 sm:mb-2 md:mb-3 text-blue-900 dark:text-blue-100 tracking-tight">
                 {tools.length}
               </div>
-              <div className="text-base md:text-lg font-bold text-blue-800 dark:text-blue-200 opacity-90 uppercase tracking-wide">
+              <div className="text-xs sm:text-sm md:text-lg font-bold text-blue-800 dark:text-blue-200 opacity-90 uppercase tracking-wide">
                 Total Tools
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900/40 dark:to-purple-800/40 rounded-3xl p-8 md:p-10 border-3 border-purple-400 dark:border-purple-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
+          <div className="bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900/40 dark:to-purple-800/40 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-10 border-2 sm:border-3 border-purple-400 dark:border-purple-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/30 dark:bg-black/30 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500" />
             <div className="relative z-10 text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-purple-500/20 group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-4xl">⭐</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2 sm:mb-3 md:mb-4 rounded-xl sm:rounded-2xl bg-purple-500/20 group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-2xl sm:text-3xl md:text-4xl">⭐</span>
               </div>
-              <div className="text-5xl md:text-6xl font-black mb-3 text-purple-900 dark:text-purple-100 tracking-tight">
+              <div className="text-2xl sm:text-3xl md:text-6xl font-black mb-1.5 sm:mb-2 md:mb-3 text-purple-900 dark:text-purple-100 tracking-tight">
                 {tools.length > 0 ? (tools.reduce((sum, tool) => sum + (tool.average_rating || 0), 0) / tools.length).toFixed(1) : '0.0'}
               </div>
-              <div className="text-base md:text-lg font-bold text-purple-800 dark:text-purple-200 opacity-90 uppercase tracking-wide">
+              <div className="text-xs sm:text-sm md:text-lg font-bold text-purple-800 dark:text-purple-200 opacity-90 uppercase tracking-wide">
                 Avg Rating
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-pink-100 to-pink-200 dark:from-pink-900/40 dark:to-pink-800/40 rounded-3xl p-8 md:p-10 border-3 border-pink-400 dark:border-pink-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
+          <div className="bg-gradient-to-br from-pink-100 to-pink-200 dark:from-pink-900/40 dark:to-pink-800/40 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-10 border-2 sm:border-3 border-pink-400 dark:border-pink-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/30 dark:bg-black/30 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500" />
             <div className="relative z-10 text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-pink-500/20 group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-4xl">❤️</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2 sm:mb-3 md:mb-4 rounded-xl sm:rounded-2xl bg-pink-500/20 group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-2xl sm:text-3xl md:text-4xl">❤️</span>
               </div>
-              <div className="text-5xl md:text-6xl font-black mb-3 text-pink-900 dark:text-pink-100 tracking-tight">
+              <div className="text-2xl sm:text-3xl md:text-6xl font-black mb-1.5 sm:mb-2 md:mb-3 text-pink-900 dark:text-pink-100 tracking-tight">
                 {tools.reduce((sum, tool) => sum + (tool.favouriteCount || 0), 0).toLocaleString()}
               </div>
-              <div className="text-base md:text-lg font-bold text-pink-800 dark:text-pink-200 opacity-90 uppercase tracking-wide">
+              <div className="text-xs sm:text-sm md:text-lg font-bold text-pink-800 dark:text-pink-200 opacity-90 uppercase tracking-wide">
                 Total Likes
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-900/40 dark:to-amber-800/40 rounded-3xl p-8 md:p-10 border-3 border-amber-400 dark:border-amber-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
+          <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-900/40 dark:to-amber-800/40 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-10 border-2 sm:border-3 border-amber-400 dark:border-amber-600 relative overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl group">
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/30 dark:bg-black/30 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500" />
             <div className="relative z-10 text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-amber-500/20 group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-4xl">📈</span>
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-2 sm:mb-3 md:mb-4 rounded-xl sm:rounded-2xl bg-amber-500/20 group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-2xl sm:text-3xl md:text-4xl">📈</span>
               </div>
-              <div className="text-5xl md:text-6xl font-black mb-3 text-amber-900 dark:text-amber-100 tracking-tight">
+              <div className="text-2xl sm:text-3xl md:text-6xl font-black mb-1.5 sm:mb-2 md:mb-3 text-amber-900 dark:text-amber-100 tracking-tight">
                 {new Set(tools.map(t => t.category)).size}
               </div>
-              <div className="text-base md:text-lg font-bold text-amber-800 dark:text-amber-200 opacity-90 uppercase tracking-wide">
+              <div className="text-xs sm:text-sm md:text-lg font-bold text-amber-800 dark:text-amber-200 opacity-90 uppercase tracking-wide">
                 Categories
               </div>
             </div>
@@ -458,69 +458,69 @@ export default function RankingsList({ period }: RankingsListProps) {
       )}
 
       {period === "this-week" && (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-8">
-          <div className="bg-gradient-to-tr from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-4 md:p-6 border-2 border-dashed border-blue-400 dark:border-blue-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10">
+          <div className="bg-gradient-to-tr from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-lg p-3 sm:p-4 md:p-6 border-2 border-dashed border-blue-400 dark:border-blue-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 to-transparent animate-pulse" />
-            <div className="relative z-10 flex items-center gap-3">
-              <div className="shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-blue-500/20 group-hover:scale-110 transition-transform">
-                <span className="text-2xl md:text-3xl">👥</span>
+            <div className="relative z-10 flex items-center gap-2 sm:gap-3">
+              <div className="shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-blue-500/20 group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl md:text-3xl">👥</span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-2xl md:text-4xl font-black text-blue-900 dark:text-blue-100 mb-1">
+                <div className="text-xl sm:text-2xl md:text-4xl font-black text-blue-900 dark:text-blue-100 mb-0.5 sm:mb-1">
                   {tools.length}
                 </div>
-                <div className="text-xs md:text-sm font-bold text-blue-700 dark:text-blue-300 opacity-80 uppercase">
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold text-blue-700 dark:text-blue-300 opacity-80 uppercase">
                   Total Tools
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-tr from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-4 md:p-6 border-2 border-dashed border-purple-400 dark:border-purple-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
+          <div className="bg-gradient-to-tr from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 rounded-lg p-3 sm:p-4 md:p-6 border-2 border-dashed border-purple-400 dark:border-purple-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 to-transparent animate-pulse" />
-            <div className="relative z-10 flex items-center gap-3">
-              <div className="shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-purple-500/20 group-hover:scale-110 transition-transform">
-                <span className="text-2xl md:text-3xl">⭐</span>
+            <div className="relative z-10 flex items-center gap-2 sm:gap-3">
+              <div className="shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-purple-500/20 group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl md:text-3xl">⭐</span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-2xl md:text-4xl font-black text-purple-900 dark:text-purple-100 mb-1">
+                <div className="text-xl sm:text-2xl md:text-4xl font-black text-purple-900 dark:text-purple-100 mb-0.5 sm:mb-1">
                   {tools.length > 0 ? (tools.reduce((sum, tool) => sum + (tool.average_rating || 0), 0) / tools.length).toFixed(1) : '0.0'}
                 </div>
-                <div className="text-xs md:text-sm font-bold text-purple-700 dark:text-purple-300 opacity-80 uppercase">
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold text-purple-700 dark:text-purple-300 opacity-80 uppercase">
                   Avg Rating
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-tr from-pink-50 to-pink-100 dark:from-pink-900/30 dark:to-pink-800/30 rounded-lg p-4 md:p-6 border-2 border-dashed border-pink-400 dark:border-pink-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
+          <div className="bg-gradient-to-tr from-pink-50 to-pink-100 dark:from-pink-900/30 dark:to-pink-800/30 rounded-lg p-3 sm:p-4 md:p-6 border-2 border-dashed border-pink-400 dark:border-pink-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
             <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/5 to-transparent animate-pulse" />
-            <div className="relative z-10 flex items-center gap-3">
-              <div className="shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-pink-500/20 group-hover:scale-110 transition-transform">
-                <span className="text-2xl md:text-3xl">❤️</span>
+            <div className="relative z-10 flex items-center gap-2 sm:gap-3">
+              <div className="shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-pink-500/20 group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl md:text-3xl">❤️</span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-2xl md:text-4xl font-black text-pink-900 dark:text-pink-100 mb-1">
+                <div className="text-xl sm:text-2xl md:text-4xl font-black text-pink-900 dark:text-pink-100 mb-0.5 sm:mb-1">
                   {tools.reduce((sum, tool) => sum + (tool.favouriteCount || 0), 0).toLocaleString()}
                 </div>
-                <div className="text-xs md:text-sm font-bold text-pink-700 dark:text-pink-300 opacity-80 uppercase">
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold text-pink-700 dark:text-pink-300 opacity-80 uppercase">
                   Total Likes
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-gradient-to-tr from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/30 rounded-lg p-4 md:p-6 border-2 border-dashed border-amber-400 dark:border-amber-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
+          <div className="bg-gradient-to-tr from-amber-50 to-amber-100 dark:from-amber-900/30 dark:to-amber-800/30 rounded-lg p-3 sm:p-4 md:p-6 border-2 border-dashed border-amber-400 dark:border-amber-600 relative overflow-hidden transition-all duration-300 hover:scale-[1.08] hover:rotate-2 hover:shadow-xl group">
             <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/5 to-transparent animate-pulse" />
-            <div className="relative z-10 flex items-center gap-3">
-              <div className="shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-xl bg-amber-500/20 group-hover:scale-110 transition-transform">
-                <span className="text-2xl md:text-3xl">📈</span>
+            <div className="relative z-10 flex items-center gap-2 sm:gap-3">
+              <div className="shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg sm:rounded-xl bg-amber-500/20 group-hover:scale-110 transition-transform">
+                <span className="text-xl sm:text-2xl md:text-3xl">📈</span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-2xl md:text-4xl font-black text-amber-900 dark:text-amber-100 mb-1">
+                <div className="text-xl sm:text-2xl md:text-4xl font-black text-amber-900 dark:text-amber-100 mb-0.5 sm:mb-1">
                   {new Set(tools.map(t => t.category)).size}
                 </div>
-                <div className="text-xs md:text-sm font-bold text-amber-700 dark:text-amber-300 opacity-80 uppercase">
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold text-amber-700 dark:text-amber-300 opacity-80 uppercase">
                   Categories
                 </div>
               </div>
@@ -687,11 +687,11 @@ export default function RankingsList({ period }: RankingsListProps) {
 
       {/* Rankings List */}
       <div className={`${
-        period === "all-time" ? "space-y-4 md:space-y-6" :
-        period === "this-month" ? "space-y-6 md:space-y-8 max-w-5xl mx-auto" :
-        period === "this-week" ? "space-y-3 md:space-y-5" :
-        period === "free" ? "space-y-4 md:space-y-5 max-w-6xl mx-auto" :
-        "space-y-5 md:space-y-7"
+        period === "all-time" ? "space-y-3 sm:space-y-4 md:space-y-6" :
+        period === "this-month" ? "space-y-4 sm:space-y-6 md:space-y-8 max-w-5xl mx-auto" :
+        period === "this-week" ? "space-y-4 sm:space-y-4 md:space-y-5" :
+        period === "free" ? "space-y-3 sm:space-y-4 md:space-y-5 max-w-6xl mx-auto" :
+        "space-y-4 sm:space-y-5 md:space-y-7"
       }`}>
         {tools.map((tool, index) => {
           // 不同分类使用不同的卡片样式
@@ -702,59 +702,59 @@ export default function RankingsList({ period }: RankingsListProps) {
           
           if (period === "all-time") {
             // All-Time: 经典卡片，大阴影，横向布局
-            cardBaseClass = `block relative overflow-hidden rounded-xl md:rounded-2xl transition-all duration-300 group animate-fade-in-up ${
+            cardBaseClass = `block relative overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 group animate-fade-in-up ${
               index === 0 ? 'bg-gradient-to-r from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/20 border-2 border-yellow-400 dark:border-yellow-600 shadow-xl shadow-yellow-500/30' :
               index === 1 ? 'bg-gradient-to-r from-gray-50 to-slate-50 dark:from-gray-900/20 dark:to-slate-900/20 border-2 border-gray-400 dark:border-gray-600 shadow-xl shadow-gray-500/30' :
               index === 2 ? 'bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 border-2 border-orange-400 dark:border-orange-600 shadow-xl shadow-orange-500/30' :
               'bg-gradient-to-r from-white to-gray-50 dark:from-zinc-900 dark:to-zinc-800 border border-gray-200 dark:border-zinc-700 shadow-md'
             }`;
             cardHoverClass = "hover:shadow-2xl hover:scale-[1.02] hover:border-[#e94560]";
-            cardPadding = "p-4 md:p-6";
-            layoutClass = "flex items-start gap-3 md:gap-6";
+            cardPadding = "p-3 sm:p-4 md:p-6";
+            layoutClass = "flex items-start gap-2 sm:gap-3 md:gap-6";
           } else if (period === "this-month") {
             // This Month: 超大圆角卡片，蓝色主题，竖向布局
-            cardBaseClass = `block relative overflow-hidden rounded-3xl transition-all duration-500 group animate-fade-in-up ${
-              index === 0 ? 'bg-gradient-to-br from-blue-100 via-cyan-50 to-blue-100 dark:from-blue-900/30 dark:via-cyan-900/20 dark:to-blue-900/30 border-3 border-blue-500 dark:border-blue-600 shadow-2xl shadow-blue-500/40' :
-              index === 1 ? 'bg-gradient-to-br from-cyan-50 to-sky-100 dark:from-cyan-900/20 dark:to-sky-900/30 border-3 border-cyan-400 dark:border-cyan-600 shadow-xl shadow-cyan-500/30' :
-              index === 2 ? 'bg-gradient-to-br from-sky-50 to-indigo-100 dark:from-sky-900/20 dark:to-indigo-900/30 border-3 border-sky-400 dark:border-sky-600 shadow-xl shadow-sky-500/30' :
+            cardBaseClass = `block relative overflow-hidden rounded-2xl sm:rounded-3xl transition-all duration-500 group animate-fade-in-up ${
+              index === 0 ? 'bg-gradient-to-br from-blue-100 via-cyan-50 to-blue-100 dark:from-blue-900/30 dark:via-cyan-900/20 dark:to-blue-900/30 border-2 sm:border-3 border-blue-500 dark:border-blue-600 shadow-2xl shadow-blue-500/40' :
+              index === 1 ? 'bg-gradient-to-br from-cyan-50 to-sky-100 dark:from-cyan-900/20 dark:to-sky-900/30 border-2 sm:border-3 border-cyan-400 dark:border-cyan-600 shadow-xl shadow-cyan-500/30' :
+              index === 2 ? 'bg-gradient-to-br from-sky-50 to-indigo-100 dark:from-sky-900/20 dark:to-indigo-900/30 border-2 sm:border-3 border-sky-400 dark:border-sky-600 shadow-xl shadow-sky-500/30' :
               'bg-white dark:bg-zinc-900 border-2 border-blue-200 dark:border-blue-800 shadow-lg'
             }`;
             cardHoverClass = "hover:shadow-2xl hover:scale-105 hover:-translate-y-2";
-            cardPadding = "p-6 md:p-8";
-            layoutClass = "flex flex-col md:flex-row items-start gap-4 md:gap-6";
+            cardPadding = "p-4 sm:p-6 md:p-8";
+            layoutClass = "flex flex-col md:flex-row items-start gap-3 sm:gap-4 md:gap-6";
           } else if (period === "this-week") {
             // This Week: 倾斜卡片，火焰效果，紧凑布局
-            cardBaseClass = `block relative overflow-hidden rounded-lg md:rounded-xl transition-all duration-300 group animate-fade-in-up ${
+            cardBaseClass = `block relative overflow-hidden rounded-lg transition-all duration-300 group animate-fade-in-up ${
               index === 0 ? 'bg-gradient-to-tr from-red-100 via-orange-100 to-yellow-100 dark:from-red-900/30 dark:via-orange-900/20 dark:to-yellow-900/30 border-2 border-red-500 dark:border-red-600 shadow-2xl shadow-red-500/40' :
               index === 1 ? 'bg-gradient-to-tr from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/30 border-2 border-orange-500 dark:border-orange-600 shadow-xl shadow-orange-500/40' :
               index === 2 ? 'bg-gradient-to-tr from-yellow-100 to-orange-100 dark:from-yellow-900/30 dark:to-orange-900/30 border-2 border-yellow-500 dark:border-yellow-600 shadow-xl shadow-yellow-500/30' :
               'bg-gradient-to-r from-white to-orange-50 dark:from-zinc-900 dark:to-orange-900/10 border border-orange-200 dark:border-orange-800 shadow-md'
             }`;
             cardHoverClass = "hover:shadow-2xl hover:scale-[1.03] hover:rotate-1";
-            cardPadding = "p-3 md:p-5";
-            layoutClass = "flex items-start gap-2 md:gap-4";
+            cardPadding = "p-3 sm:p-3.5 md:p-5";
+            layoutClass = "flex items-start gap-3.5 sm:gap-4 md:gap-5";
           } else if (period === "free") {
             // Free: 简洁卡片，绿色清新，宽松布局
-            cardBaseClass = `block relative overflow-hidden rounded-2xl transition-all duration-300 group animate-fade-in-up ${
+            cardBaseClass = `block relative overflow-hidden rounded-xl sm:rounded-2xl transition-all duration-300 group animate-fade-in-up ${
               index === 0 ? 'bg-gradient-to-r from-green-50 via-emerald-50 to-teal-50 dark:from-green-900/20 dark:via-emerald-900/20 dark:to-teal-900/20 border-2 border-green-500 dark:border-green-600 shadow-xl shadow-green-500/30' :
               index === 1 ? 'bg-gradient-to-r from-emerald-50 to-green-100 dark:from-emerald-900/20 dark:to-green-900/30 border-2 border-emerald-400 dark:border-emerald-600 shadow-lg shadow-emerald-500/20' :
               index === 2 ? 'bg-gradient-to-r from-teal-50 to-emerald-100 dark:from-teal-900/20 dark:to-emerald-900/30 border-2 border-teal-400 dark:border-teal-600 shadow-lg shadow-teal-500/20' :
               'bg-white dark:bg-zinc-900 border border-green-200 dark:border-green-800 shadow-sm'
             }`;
             cardHoverClass = "hover:shadow-xl hover:scale-[1.01] hover:border-green-500";
-            cardPadding = "p-5 md:p-7";
-            layoutClass = "flex items-center gap-4 md:gap-6";
+            cardPadding = "p-4 sm:p-5 md:p-7";
+            layoutClass = "flex items-center gap-3 sm:gap-4 md:gap-6";
           } else {
             // Paid: 豪华卡片，金色奢华，超宽松布局
-            cardBaseClass = `block relative overflow-hidden rounded-2xl md:rounded-3xl transition-all duration-300 group animate-fade-in-up ${
-              index === 0 ? 'bg-gradient-to-br from-amber-100 via-yellow-100 to-orange-100 dark:from-amber-900/30 dark:via-yellow-900/20 dark:to-orange-900/30 border-[3px] border-amber-500 dark:border-amber-600 shadow-2xl shadow-amber-500/50' :
-              index === 1 ? 'bg-gradient-to-br from-yellow-100 to-amber-100 dark:from-yellow-900/30 dark:to-amber-900/30 border-[3px] border-yellow-500 dark:border-yellow-600 shadow-xl shadow-yellow-500/40' :
-              index === 2 ? 'bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 border-[3px] border-orange-400 dark:border-orange-600 shadow-xl shadow-orange-500/30' :
+            cardBaseClass = `block relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl transition-all duration-300 group animate-fade-in-up ${
+              index === 0 ? 'bg-gradient-to-br from-amber-100 via-yellow-100 to-orange-100 dark:from-amber-900/30 dark:via-yellow-900/20 dark:to-orange-900/30 border-2 sm:border-[3px] border-amber-500 dark:border-amber-600 shadow-2xl shadow-amber-500/50' :
+              index === 1 ? 'bg-gradient-to-br from-yellow-100 to-amber-100 dark:from-yellow-900/30 dark:to-amber-900/30 border-2 sm:border-[3px] border-yellow-500 dark:border-yellow-600 shadow-xl shadow-yellow-500/40' :
+              index === 2 ? 'bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30 border-2 sm:border-[3px] border-orange-400 dark:border-orange-600 shadow-xl shadow-orange-500/30' :
               'bg-gradient-to-br from-white to-amber-50 dark:from-zinc-900 dark:to-amber-900/10 border-2 border-amber-200 dark:border-amber-800 shadow-lg'
             }`;
             cardHoverClass = "hover:shadow-3xl hover:scale-[1.03] hover:border-amber-400 hover:shadow-amber-500/60";
-            cardPadding = "p-6 md:p-10";
-            layoutClass = "flex items-start gap-5 md:gap-8";
+            cardPadding = "p-4 sm:p-6 md:p-10";
+            layoutClass = "flex items-start gap-3 sm:gap-5 md:gap-8";
           }
 
           return (
@@ -817,8 +817,8 @@ export default function RankingsList({ period }: RankingsListProps) {
               <div className="flex-1 min-w-0 relative">
                 {/* 前三名标签 - 移动端优化 */}
                 {index < 3 && (
-                  <div className="inline-block mb-2">
-                    <div className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-bold text-white shadow-md ${
+                  <div className={`inline-block ${period === "this-week" ? "mb-2 sm:mb-2.5" : "mb-1.5 sm:mb-2"}`}>
+                    <div className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold text-white shadow-md ${
                       index === 0 ? 'bg-gradient-to-r from-yellow-500 to-amber-600' :
                       index === 1 ? 'bg-gradient-to-r from-gray-400 to-gray-600' :
                       'bg-gradient-to-r from-orange-500 to-red-600'
@@ -828,15 +828,15 @@ export default function RankingsList({ period }: RankingsListProps) {
                   </div>
                 )}
                 
-                <div className="flex items-start justify-between mb-2 gap-2">
+                <div className={`flex items-start justify-between gap-2 ${period === "this-week" ? "mb-2.5 sm:mb-3" : "mb-2"}`}>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-base md:text-xl font-bold text-black dark:text-zinc-50 group-hover:text-[#e94560] transition-colors line-clamp-2 mb-2">
+                    <h3 className={`text-sm sm:text-base md:text-xl font-bold text-black dark:text-zinc-50 group-hover:text-[#e94560] transition-colors line-clamp-2 ${period === "this-week" ? "mb-2 sm:mb-2.5" : "mb-1.5 sm:mb-2"}`}>
                       {tool.tool_name}
                     </h3>
                     {/* 工具类型标签 - 移动端简化 */}
-                    <div className="flex items-center gap-2 flex-wrap mb-2">
-                      <span className="inline-flex items-center gap-1 px-2 py-0.5 md:px-3 md:py-1 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium border border-purple-200 dark:border-purple-800">
-                        <svg className="w-3 h-3 hidden md:inline" fill="currentColor" viewBox="0 0 20 20">
+                    <div className={`flex items-center gap-1.5 sm:gap-2 flex-wrap ${period === "this-week" ? "mb-2 sm:mb-2.5" : "mb-1.5 sm:mb-2"}`}>
+                      <span className="inline-flex items-center gap-1 px-1.5 sm:px-2 py-0.5 sm:py-0.5 md:px-3 md:py-1 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 text-purple-700 dark:text-purple-300 rounded-full text-[10px] sm:text-xs font-medium border border-purple-200 dark:border-purple-800">
+                        <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 hidden sm:inline" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clipRule="evenodd" />
                         </svg>
                         {tool.category}
@@ -844,22 +844,22 @@ export default function RankingsList({ period }: RankingsListProps) {
                     </div>
                   </div>
                   
-                  <div className="flex flex-col items-end gap-2 shrink-0">
+                  <div className="flex flex-col items-end gap-1.5 sm:gap-2 shrink-0">
                     {/* Favorites */}
-                    <div className="flex items-center gap-1 group/fav hover:scale-110 transition-transform cursor-pointer">
-                      <svg className="w-4 h-4 md:w-5 md:h-5 text-[#e94560] group-hover/fav:animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="flex items-center gap-0.5 sm:gap-1 group/fav hover:scale-110 transition-transform cursor-pointer">
+                      <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-[#e94560] group-hover/fav:animate-bounce" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
                       </svg>
-                      <span className="text-xs md:text-sm font-bold text-[#e94560]">{tool.favouriteCount || 0}</span>
+                      <span className="text-[10px] sm:text-xs md:text-sm font-bold text-[#e94560]">{tool.favouriteCount || 0}</span>
                     </div>
 
                     {/* Rating - 移动端显示 */}
                     {tool.average_rating && (
-                      <div className="flex items-center gap-1">
-                        <svg className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <div className="flex items-center gap-0.5 sm:gap-1">
+                        <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
-                        <span className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
+                        <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
                           {tool.average_rating.toFixed(1)}
                         </span>
                       </div>
@@ -867,7 +867,7 @@ export default function RankingsList({ period }: RankingsListProps) {
                   </div>
                 </div>
 
-                <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-2 md:mb-3 line-clamp-2 leading-relaxed">{tool.headline}</p>
+                <p className={`text-[11px] sm:text-xs md:text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed ${period === "this-week" ? "mb-2.5 sm:mb-3" : "mb-2 sm:mb-2 md:mb-3"}`}>{tool.headline}</p>
 
                 <div className="flex items-center gap-1.5 md:gap-2 flex-wrap">
                   {/* Stats */}
@@ -938,7 +938,7 @@ export default function RankingsList({ period }: RankingsListProps) {
       {/* Info Box */}
       <div className="mt-12 space-y-6">
         {/* 排名方法说明 - 不同分类不同样式 */}
-        <div className={`rounded-2xl p-8 border relative overflow-hidden ${
+        <div className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border relative overflow-hidden ${
           period === "all-time" ? "bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-900/20 dark:via-purple-900/20 dark:to-pink-900/20 border-indigo-200 dark:border-indigo-800" :
           period === "this-month" ? "bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-blue-200 dark:border-blue-800" :
           period === "this-week" ? "bg-gradient-to-tr from-orange-50 via-red-50 to-pink-50 dark:from-orange-900/20 dark:via-red-900/20 dark:to-pink-900/20 border-orange-200 dark:border-orange-800" :
@@ -954,88 +954,88 @@ export default function RankingsList({ period }: RankingsListProps) {
             "bg-amber-400"
           }`} />
           
-          <div className="flex items-center gap-3 mb-6 relative z-10">
-            <div className={`p-3 rounded-xl ${
+          <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 relative z-10">
+            <div className={`p-2 sm:p-3 rounded-lg sm:rounded-xl ${
               period === "all-time" ? "bg-indigo-600 dark:bg-indigo-500" :
               period === "this-month" ? "bg-blue-600 dark:bg-blue-500" :
               period === "this-week" ? "bg-orange-600 dark:bg-orange-500" :
               period === "free" ? "bg-green-600 dark:bg-green-500" :
               "bg-amber-600 dark:bg-amber-500"
             }`}>
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-black dark:text-zinc-50">Ranking Methodology</h2>
-              <p className="text-sm text-gray-600 dark:text-gray-400">How we calculate the rankings</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-zinc-50">Ranking Methodology</h2>
+              <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">How we calculate the rankings</p>
             </div>
           </div>
           
-          <div className={`grid gap-6 relative z-10 ${
+          <div className={`grid gap-4 sm:gap-6 relative z-10 ${
             period === "this-month" ? "md:grid-cols-1 lg:grid-cols-2" :
             period === "free" ? "grid-cols-1 md:grid-cols-2" :
             "md:grid-cols-2"
           }`}>
-            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-lg sm:rounded-xl p-4 sm:p-6 backdrop-blur-sm">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="p-1.5 sm:p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-900 dark:text-zinc-50 mb-2">All Time Rankings</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-zinc-50 mb-1.5 sm:mb-2">All Time Rankings</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     Based on cumulative user favorites since tool launch. Reflects overall popularity and long-term trust.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
-                  <svg className="w-5 h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-lg sm:rounded-xl p-4 sm:p-6 backdrop-blur-sm">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="p-1.5 sm:p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-900 dark:text-zinc-50 mb-2">Monthly & Weekly</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-zinc-50 mb-1.5 sm:mb-2">Monthly & Weekly</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     Trending tools based on recent activity. Perfect for discovering what's hot right now.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                  <svg className="w-5 h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-lg sm:rounded-xl p-4 sm:p-6 backdrop-blur-sm">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="p-1.5 sm:p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-900 dark:text-zinc-50 mb-2">Free Tools</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-zinc-50 mb-1.5 sm:mb-2">Free Tools</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     Best tools with free plans or tiers. Start exploring AI without any upfront investment.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-amber-100 dark:bg-amber-900/30 rounded-lg">
-                  <svg className="w-5 h-5 text-amber-600 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white/50 dark:bg-zinc-900/50 rounded-lg sm:rounded-xl p-4 sm:p-6 backdrop-blur-sm">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="p-1.5 sm:p-2 bg-amber-100 dark:bg-amber-900/30 rounded-lg">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 dark:text-amber-400" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-900 dark:text-zinc-50 mb-2">Premium Tools</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-zinc-50 mb-1.5 sm:mb-2">Premium Tools</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     Professional-grade tools worth the investment. Ranked by user satisfaction and value.
                   </p>
                 </div>
@@ -1045,7 +1045,7 @@ export default function RankingsList({ period }: RankingsListProps) {
         </div>
 
         {/* 更新频率说明 - 不同分类不同样式 */}
-        <div className={`rounded-2xl p-8 border relative overflow-hidden ${
+        <div className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border relative overflow-hidden ${
           period === "all-time" ? "bg-gradient-to-br from-gray-50 to-white dark:from-zinc-900 dark:to-zinc-800 border-gray-200 dark:border-zinc-800" :
           period === "this-month" ? "bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-cyan-200 dark:border-cyan-800" :
           period === "this-week" ? "bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 border-red-200 dark:border-red-800" :
@@ -1061,39 +1061,39 @@ export default function RankingsList({ period }: RankingsListProps) {
             "bg-yellow-400"
           }`} />
           
-          <div className="flex items-start justify-between mb-6 relative z-10">
-            <div className="flex items-center gap-3">
-              <div className={`p-3 rounded-xl ${
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6 relative z-10">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className={`p-2 sm:p-3 rounded-lg sm:rounded-xl ${
                 period === "all-time" ? "bg-[#e94560]" :
                 period === "this-month" ? "bg-cyan-600 dark:bg-cyan-500" :
                 period === "this-week" ? "bg-red-600 dark:bg-red-500" :
                 period === "free" ? "bg-emerald-600 dark:bg-emerald-500" :
                 "bg-yellow-600 dark:bg-yellow-500"
               }`}>
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-black dark:text-zinc-50">Real-Time Updates</h2>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Fresh data, daily refresh</p>
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-zinc-50">Real-Time Updates</h2>
+                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Fresh data, daily refresh</p>
               </div>
             </div>
-            <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${
+            <div className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full ${
               period === "all-time" ? "bg-green-100 dark:bg-green-900/30" :
               period === "this-month" ? "bg-blue-100 dark:bg-blue-900/30" :
               period === "this-week" ? "bg-orange-100 dark:bg-orange-900/30" :
               period === "free" ? "bg-emerald-100 dark:bg-emerald-900/30" :
               "bg-amber-100 dark:bg-amber-900/30"
             }`}>
-              <div className={`w-2 h-2 rounded-full animate-pulse ${
+              <div className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full animate-pulse ${
                 period === "all-time" ? "bg-green-500" :
                 period === "this-month" ? "bg-blue-500" :
                 period === "this-week" ? "bg-orange-500" :
                 period === "free" ? "bg-emerald-500" :
                 "bg-amber-500"
               }`}></div>
-              <span className={`text-sm font-medium ${
+              <span className={`text-xs sm:text-sm font-medium ${
                 period === "all-time" ? "text-green-700 dark:text-green-400" :
                 period === "this-month" ? "text-blue-700 dark:text-blue-400" :
                 period === "this-week" ? "text-orange-700 dark:text-orange-400" :
@@ -1103,31 +1103,31 @@ export default function RankingsList({ period }: RankingsListProps) {
             </div>
           </div>
           
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 relative z-10">
+          <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-3 sm:mb-4 relative z-10">
             Our rankings are updated daily to reflect the latest user activity and preferences in the AI tools ecosystem. 
             We track favorites, ratings, and user engagement to ensure you're always seeing the most relevant and trusted tools.
           </p>
           
-          <div className={`flex flex-wrap gap-3 mt-6 relative z-10 ${
+          <div className={`flex flex-wrap gap-2 sm:gap-3 mt-4 sm:mt-6 relative z-10 ${
             period === "this-week" ? "justify-center" : ""
           }`}>
-            <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-              <svg className="w-4 h-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Daily Updates</span>
+              <span className="text-xs sm:text-sm font-medium text-blue-700 dark:text-blue-300">Daily Updates</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-              <svg className="w-4 h-4 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium text-purple-700 dark:text-purple-300">User Verified</span>
+              <span className="text-xs sm:text-sm font-medium text-purple-700 dark:text-purple-300">User Verified</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-pink-50 dark:bg-pink-900/20 rounded-lg border border-pink-200 dark:border-pink-800">
-              <svg className="w-4 h-4 text-pink-600 dark:text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-pink-50 dark:bg-pink-900/20 rounded-lg border border-pink-200 dark:border-pink-800">
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-600 dark:text-pink-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium text-pink-700 dark:text-pink-300">Community Driven</span>
+              <span className="text-xs sm:text-sm font-medium text-pink-700 dark:text-pink-300">Community Driven</span>
             </div>
           </div>
         </div>
