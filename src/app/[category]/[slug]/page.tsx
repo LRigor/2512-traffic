@@ -28,11 +28,17 @@ export async function generateStaticParams() {
   const categories = getAllCategories();
 
   for (const categoryItem of categories) {
+    // 验证 category id
+    if (!categoryItem.id || typeof categoryItem.id !== "string" || categoryItem.id.includes('.')) {
+      continue;
+    }
+
     const categoryData = getCategoryData(categoryItem.id);
 
     if (categoryData?.data && Array.isArray(categoryData.data)) {
       for (const tool of categoryData.data) {
-        if (tool.slug && typeof tool.slug === "string" && tool.slug.trim()) {
+        // 验证 slug
+        if (tool.slug && typeof tool.slug === "string" && tool.slug.trim() && !tool.slug.includes('.')) {
           params.push({
             category: categoryItem.id,
             slug: tool.slug.trim(),

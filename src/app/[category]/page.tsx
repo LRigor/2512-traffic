@@ -20,13 +20,56 @@ export async function generateStaticParams() {
       return [];
     }
     
+    // 定义需要排除的路径
+    const excludedPaths = [
+      'favicon.ico',
+      'robots.txt',
+      'sitemap.xml',
+      '_next',
+      'api',
+      'images',
+      '.svg',
+      '.png',
+      '.jpg',
+      '.ico',
+    ];
+    
     const params = categories
-      .filter((item) => item.id && typeof item.id === "string" && item.id.trim() !== "")
+      .filter((item) => {
+        // 严格验证：确保 id 存在、是字符串、非空
+        if (!item.id || typeof item.id !== "string" || item.id.trim() === "") {
+          console.log('Filtered out invalid id:', item);
+          return false;
+        }
+        
+        const id = item.id.trim();
+        
+        // 排除包含文件扩展名的路径
+        if (id.includes('.')) {
+          console.log('Filtered out path with extension:', id);
+          return false;
+        }
+        
+        // 排除特定的系统路径
+        if (excludedPaths.some(excluded => id.includes(excluded))) {
+          console.log('Filtered out excluded path:', id);
+          return false;
+        }
+        
+        // 只允许小写字母、数字和连字符
+        if (!/^[a-z0-9-]+$/.test(id)) {
+          console.log('Filtered out invalid format:', id);
+          return false;
+        }
+        
+        return true;
+      })
       .map((item) => ({
         category: item.id.trim(),
       }));
     
     console.log('Generated params:', params);
+    console.log('Total params count:', params.length);
     
     // Ensure we always return an array with at least one fallback
     if (params.length === 0) {
