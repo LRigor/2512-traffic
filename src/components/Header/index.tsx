@@ -62,6 +62,7 @@ const Header = () => {
               width={180} 
               height={80} 
               className="relative z-10 transition-transform duration-300 group-hover:scale-105"
+              priority
             />
           </div>
         </Link>

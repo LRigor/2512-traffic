@@ -24,6 +24,7 @@ export default function Banner() {
           width={60}
           height={100}
           className="w-12 h-20 flex-shrink-0"
+          priority
           style={{
             transform: "scaleX(-1) rotate(-12deg)",
           }}
@@ -47,6 +48,7 @@ export default function Banner() {
           width={60}
           height={100}
           className="w-12 h-20 flex-shrink-0"
+          priority
           style={{
             transform: "rotate(-12deg)",
           }}
