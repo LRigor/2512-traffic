@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       "Learn about OpenTools, the leading AI tools directory helping millions discover and compare AI solutions.",
     type: "website",
-    url: "https://opentools.ai/about",
+    url: "https://aifinds.ai/about",
   },
   twitter: {
     card: "summary",

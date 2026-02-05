@@ -163,7 +163,7 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
                 slug={tool.slug}
               />
               <Link
-                href="https://opentools.ai/friends/claim-tool?tool_id=669930dc46403d98189af85a"
+                href="https://aifinds.ai/friends/claim-tool?tool_id=669930dc46403d98189af85a"
                 className="text-blue-600 hover:underline text-sm"
                 target="_blank"
                 rel="noopener noreferrer"

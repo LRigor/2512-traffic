@@ -8,7 +8,14 @@ import { trackEvent } from "@/utils/umami";
 const Footer = () => {
   const pathname = usePathname();
 
-  const hiddenRoutes = ["/terms", "/privacy", "/about", "/faq", "/help", "/contact"];
+  const hiddenRoutes = [
+    "/terms",
+    "/privacy",
+    "/about",
+    "/faq",
+    "/help",
+    "/contact",
+  ];
   if (hiddenRoutes.includes(pathname)) {
     return null;
   }
@@ -27,12 +34,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
           <div>
-              <Image
-                src="/images/logo.svg"
-                alt="OpenTools"
-                width={150}
-                height={40}
-              />
+            <Image
+              src="/images/logo.webp"
+              alt="aifinds"
+              width={150}
+              height={40}
+            />
             <p className="text-gray-400 text-sm leading-relaxed">
               Elevate your game with AI tools that redefine possibility.
             </p>
@@ -112,7 +119,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <p className="text-gray-400 text-sm">
-            © 2026 OpenTools - All rights reserved.
+            © 2026 aifinds - All rights reserved.
           </p>
         </div>
       </div>

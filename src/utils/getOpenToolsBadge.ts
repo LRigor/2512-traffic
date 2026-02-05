@@ -3,7 +3,7 @@ export function getOpenToolsBadge(
   slug: string
 ): string {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="260" height="50" viewBox="0 0 260 50" fill="none">
-    <a href="https://opentools.ai/tools/${slug}" target="_blank" alt="${slug}">
+    <a href="https://aifinds.ai/tools/${slug}" target="_blank" alt="${slug}">
       <rect width="215" height="45" x="2.5" y="2.5" rx="5" fill="white" stroke="#f43f5e" stroke-width="2"></rect>
       <svg x="10" y="10" width="30" height="30" viewBox="0 0 354 354" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1312_227)">

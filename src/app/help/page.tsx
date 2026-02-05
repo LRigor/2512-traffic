@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Help Center | OpenTools",
     description: "Get help with OpenTools. Browse our guides, tutorials, and support resources.",
     type: "website",
-    url: "https://opentools.ai/help",
+    url: "https://aifinds.ai/help",
   },
   twitter: {
     card: "summary",

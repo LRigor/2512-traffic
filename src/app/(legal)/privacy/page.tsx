@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | OpenTools",
     description: "Learn how OpenTools collects, uses, and protects your personal information.",
     type: "website",
-    url: "https://opentools.ai/privacy",
+    url: "https://aifinds.ai/privacy",
   },
   twitter: {
     card: "summary",

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = 'https://opentools.ai';
+const baseUrl = 'https://aifinds.ai';
 
 // Read all categories
 const categoriesPath = path.join(__dirname, '../src/data/categories.json');

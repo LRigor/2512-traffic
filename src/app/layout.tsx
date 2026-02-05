@@ -19,8 +19,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "opentools",
-  description: "opentools is a directory of open-source tools for developers.",
+  title: "aifinds",
+  description: "aifinds is a directory of open-source tools for developers.",
+  icons: {
+    icon: "/images/logo.webp",
+  },
 };
 
 export default function RootLayout({
@@ -28,20 +31,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteUrl = "https://opentools.ai";
+  const siteUrl = "https://aifinds.ai";
 
   const structuredData = [
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "OpenTools",
+      name: "aifinds",
       url: siteUrl,
-      logo: `${siteUrl}/images/logo.svg`,
+      logo: `${siteUrl}/images/logo.webp`,
     },
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "OpenTools",
+      name: "aifinds",
       url: siteUrl,
     },
   ] as const;
@@ -51,7 +54,6 @@ export default function RootLayout({
       <head>
         {structuredData.map((jsonLd, idx) => (
           <script
-            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             key={idx}
             type="application/ld+json"

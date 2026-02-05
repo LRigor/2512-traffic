@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Terms of Service | OpenTools",
     description: "Read the OpenTools Terms of Service. Understand your rights and obligations when using our platform.",
     type: "website",
-    url: "https://opentools.ai/terms",
+    url: "https://aifinds.ai/terms",
   },
   twitter: {
     card: "summary",
