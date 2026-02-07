@@ -2,28 +2,28 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | OpenTools - Discover the Best AI Tools",
+  title: "About Us | aifinds - Discover the Best AI Tools",
   description:
-    "Learn about OpenTools, the leading AI tools directory helping millions discover, compare, and choose the best AI solutions for their needs.",
+    "Learn about aifinds, the leading AI tools directory helping millions discover, compare, and choose the best AI solutions for their needs.",
   keywords: [
-    "about OpenTools",
+    "about aifinds",
     "AI tools directory",
     "AI tools comparison",
     "best AI tools",
     "AI discovery platform",
   ],
   openGraph: {
-    title: "About Us | OpenTools",
+    title: "About Us | aifinds",
     description:
-      "Learn about OpenTools, the leading AI tools directory helping millions discover and compare AI solutions.",
+      "Learn about aifinds, the leading AI tools directory helping millions discover and compare AI solutions.",
     type: "website",
     url: "https://aifinds.ai/about",
   },
   twitter: {
     card: "summary",
-    title: "About Us | OpenTools",
+    title: "About Us | aifinds",
     description:
-      "Learn about OpenTools, the leading AI tools directory helping millions discover and compare AI solutions.",
+      "Learn about aifinds, the leading AI tools directory helping millions discover and compare AI solutions.",
   },
   robots: {
     index: true,
@@ -219,7 +219,7 @@ export default function AboutPage() {
           <RocketIcon />
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          About OpenTools
+          About aifinds
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed text-lg">
           Your gateway to discovering, comparing, and choosing the best AI
@@ -250,7 +250,7 @@ export default function AboutPage() {
       {/* Our Mission */}
       <Section icon={<TargetIcon />} title="Our Mission">
         <p className="text-gray-700 leading-relaxed mb-4">
-          At OpenTools, our mission is to democratize access to AI technology by
+          At aifinds, our mission is to democratize access to AI technology by
           providing a comprehensive, unbiased directory of the world&apos;s best
           AI tools. We believe that everyone should be able to find and leverage
           AI solutions that enhance their productivity, creativity, and success.
@@ -337,10 +337,10 @@ export default function AboutPage() {
       </Section>
 
       {/* Why Choose Us */}
-      <Section icon={<LightbulbIcon />} title="Why Choose OpenTools?">
+      <Section icon={<LightbulbIcon />} title="Why Choose aifinds?">
         <p className="text-gray-700 leading-relaxed mb-4">
           In a rapidly evolving AI landscape, finding the right tool can be
-          overwhelming. OpenTools simplifies this process by offering:
+          overwhelming. aifinds simplifies this process by offering:
         </p>
         <ul className="space-y-3 text-gray-700">
           <li className="flex items-start gap-3">

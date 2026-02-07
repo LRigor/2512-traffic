@@ -138,8 +138,8 @@ export default function ContactPage() {
           <ContactCard
             icon={<MailIcon />}
             title="Email Us"
-            content="support@opentools.ai"
-            link="mailto:support@opentools.ai"
+            content="support@aifinds.ai"
+            link="mailto:support@aifinds.ai"
           />
           <ContactCard
             icon={<ChatIcon />}
@@ -320,7 +320,7 @@ export default function ContactPage() {
         <h2 className="text-2xl font-bold mb-4">Need More Help?</h2>
         <p className="text-white/90 mb-6 max-w-2xl mx-auto">
           Explore our Help Center for guides, tutorials, and detailed documentation 
-          to help you get the most out of OpenTools.
+          to help you get the most out of aifinds.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link 

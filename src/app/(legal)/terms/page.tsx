@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | OpenTools",
-  description: "Read the OpenTools Terms of Service. Understand your rights and obligations when using our AI tools directory platform.",
-  keywords: ["terms of service", "terms and conditions", "OpenTools", "user agreement", "legal terms"],
+  title: "Terms of Service | aifinds",
+  description: "Read the aifinds Terms of Service. Understand your rights and obligations when using our AI tools directory platform.",
+  keywords: ["terms of service", "terms and conditions", "aifinds", "user agreement", "legal terms"],
   openGraph: {
-    title: "Terms of Service | OpenTools",
-    description: "Read the OpenTools Terms of Service. Understand your rights and obligations when using our platform.",
+    title: "Terms of Service | aifinds",
+    description: "Read the aifinds Terms of Service. Understand your rights and obligations when using our platform.",
     type: "website",
     url: "https://aifinds.ai/terms",
   },
   twitter: {
     card: "summary",
-    title: "Terms of Service | OpenTools",
-    description: "Read the OpenTools Terms of Service. Understand your rights and obligations.",
+    title: "Terms of Service | aifinds",
+    description: "Read the aifinds Terms of Service. Understand your rights and obligations.",
   },
   robots: {
     index: true,
@@ -152,7 +152,7 @@ export default function TermsOfService() {
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Terms of Service</h1>
         <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Please read these terms carefully before using OpenTools. By using the Software, 
+          Please read these terms carefully before using aifinds. By using the Software, 
           you agree to be bound by these Terms.
         </p>
       </div>
@@ -160,7 +160,7 @@ export default function TermsOfService() {
       {/* Sections */}
       <Section icon={<DocumentIcon />} title="1. Introduction">
         <p className="text-gray-700 leading-relaxed">
-          Thank you for using OpenTools (the &quot;Software&quot;). This document constitutes the 
+          Thank you for using aifinds (the &quot;Software&quot;). This document constitutes the 
           terms of service (the &quot;Terms&quot;) under which you (the &quot;User&quot;) are allowed to use 
           the Software. Please read these Terms carefully before using the Software. By using 
           the Software, you agree to be bound by these Terms.
@@ -169,7 +169,7 @@ export default function TermsOfService() {
 
       <Section icon={<KeyIcon />} title="2. License Grant">
         <p className="text-gray-700 leading-relaxed">
-          Subject to your compliance with these Terms, OpenTools grants you a non-exclusive, 
+          Subject to your compliance with these Terms, aifinds grants you a non-exclusive, 
           non-transferable, and non-sublicensable license to use the Software for your internal 
           business purposes. The license granted herein is limited to the number of users and 
           devices specified in your order, and the license fee paid by you.
@@ -195,7 +195,7 @@ export default function TermsOfService() {
       <Section icon={<SparklesIcon />} title="4. Ownership and Intellectual Property Rights">
         <p className="text-gray-700 leading-relaxed">
           The Software and all intellectual property rights therein, including but not limited 
-          to copyrights, trademarks, and trade secrets, are owned by OpenTools and its licensors. 
+          to copyrights, trademarks, and trade secrets, are owned by aifinds and its licensors. 
           You agree not to challenge or contest the validity of any such ownership or intellectual 
           property rights.
         </p>
@@ -203,17 +203,17 @@ export default function TermsOfService() {
 
       <Section icon={<LockClosedIcon />} title="5. Confidentiality">
         <p className="text-gray-700 leading-relaxed">
-          You shall treat all information and materials provided by OpenTools in connection with 
+          You shall treat all information and materials provided by aifinds in connection with 
           the Software as confidential and use them only for the purposes set forth herein. You 
           shall not disclose such information to any third party without the prior written consent 
-          of OpenTools.
+          of aifinds.
         </p>
       </Section>
 
       <Section icon={<ShieldExclamationIcon />} title="6. Warranty Disclaimer" variant="warning">
         <p className="text-gray-700 leading-relaxed font-medium">
           THE SOFTWARE IS PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS, WITHOUT WARRANTY 
-          OF ANY KIND, EXPRESS OR IMPLIED. OPENTOOLS DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT 
+          OF ANY KIND, EXPRESS OR IMPLIED. aifinds DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT 
           LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, 
           AND NON-INFRINGEMENT.
         </p>
@@ -221,7 +221,7 @@ export default function TermsOfService() {
 
       <Section icon={<ExclamationCircleIcon />} title="7. Limitation of Liability" variant="warning">
         <p className="text-gray-700 leading-relaxed font-medium">
-          UNDER NO CIRCUMSTANCES SHALL OPENTOOLS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY 
+          UNDER NO CIRCUMSTANCES SHALL aifinds BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY 
           DIRECT, INDIRECT, CONSEQUENTIAL, SPECIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR IN 
           CONNECTION WITH THE SOFTWARE, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING 
           NEGLIGENCE), OR ANY OTHER LEGAL THEORY.
@@ -230,7 +230,7 @@ export default function TermsOfService() {
 
       <Section icon={<XCircleIcon />} title="8. Termination">
         <p className="text-gray-700 leading-relaxed">
-          OpenTools reserves the right to terminate these Terms at any time and for any reason, 
+          aifinds reserves the right to terminate these Terms at any time and for any reason, 
           without notice. Upon termination, you shall immediately cease all use of the Software 
           and destroy all copies thereof.
         </p>
@@ -247,7 +247,7 @@ export default function TermsOfService() {
 
       <Section icon={<ClipboardCheckIcon />} title="10. Entire Agreement">
         <p className="text-gray-700 leading-relaxed">
-          These Terms constitute the entire agreement between you and OpenTools regarding the 
+          These Terms constitute the entire agreement between you and aifinds regarding the 
           use of the Software, and supersede all prior or contemporaneous agreements, whether 
           written or oral.
         </p>

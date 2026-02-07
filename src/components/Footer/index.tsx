@@ -20,9 +20,23 @@ const Footer = () => {
     return null;
   }
 
+  // 根据链接 URL 生成事件名称
+  const getEventName = (linkUrl: string): string => {
+    const eventMap: Record<string, string> = {
+      "/about": "footer_about_click",
+      "/privacy": "footer_privacy_click",
+      "/terms": "footer_terms_click",
+      "/help": "footer_help_click",
+      "/faq": "footer_faq_click",
+      "/contact": "footer_contact_click",
+    };
+    return eventMap[linkUrl] || "footer_link_click";
+  };
+
   // 处理链接点击事件
   const handleLinkClick = (linkName: string, linkUrl: string) => {
-    trackEvent("footer_link_click", {
+    const eventName = getEventName(linkUrl);
+    trackEvent(eventName, {
       link_name: linkName,
       link_url: linkUrl,
     });

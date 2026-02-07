@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Help Center | OpenTools - Get Support & Learn More",
-  description: "Get help with OpenTools. Browse our guides, tutorials, and support resources to make the most of our AI tools directory.",
-  keywords: ["help center", "support", "tutorials", "guides", "OpenTools help", "AI tools support"],
+  title: "Help Center | aifinds - Get Support & Learn More",
+  description: "Get help with aifinds. Browse our guides, tutorials, and support resources to make the most of our AI tools directory.",
+  keywords: ["help center", "support", "tutorials", "guides", "aifinds help", "AI tools support"],
   openGraph: {
-    title: "Help Center | OpenTools",
-    description: "Get help with OpenTools. Browse our guides, tutorials, and support resources.",
+    title: "Help Center | aifinds",
+    description: "Get help with aifinds. Browse our guides, tutorials, and support resources.",
     type: "website",
     url: "https://aifinds.ai/help",
   },
   twitter: {
     card: "summary",
-    title: "Help Center | OpenTools",
-    description: "Get help with OpenTools. Browse our guides, tutorials, and support resources.",
+    title: "Help Center | aifinds",
+    description: "Get help with aifinds. Browse our guides, tutorials, and support resources.",
   },
   robots: {
     index: true,
@@ -150,7 +150,7 @@ export default function HelpPage() {
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Help Center</h1>
         <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed text-lg">
-          Welcome to the OpenTools Help Center. Find guides, tutorials, and answers 
+          Welcome to the aifinds Help Center. Find guides, tutorials, and answers 
           to help you discover and use AI tools effectively.
         </p>
       </div>
@@ -160,7 +160,7 @@ export default function HelpPage() {
         <HelpCard
           icon={<BookIcon />}
           title="Getting Started Guide"
-          description="New to OpenTools? Learn how to navigate our directory, search for tools, and make the most of our features."
+          description="New to aifinds? Learn how to navigate our directory, search for tools, and make the most of our features."
           link="/faq"
         />
         <HelpCard
@@ -172,7 +172,7 @@ export default function HelpPage() {
         <HelpCard
           icon={<QuestionIcon />}
           title="Frequently Asked Questions"
-          description="Browse our comprehensive FAQ section for quick answers to common questions about OpenTools."
+          description="Browse our comprehensive FAQ section for quick answers to common questions about aifinds."
           link="/faq"
         />
         <HelpCard

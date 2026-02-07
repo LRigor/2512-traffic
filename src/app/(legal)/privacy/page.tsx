@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | OpenTools",
-  description: "Learn how OpenTools collects, uses, and protects your personal information. Read our privacy policy to understand your rights and our data practices.",
-  keywords: ["privacy policy", "data protection", "OpenTools", "personal information", "user privacy"],
+  title: "Privacy Policy | aifinds",
+  description: "Learn how aifinds collects, uses, and protects your personal information. Read our privacy policy to understand your rights and our data practices.",
+  keywords: ["privacy policy", "data protection", "aifinds", "personal information", "user privacy"],
   openGraph: {
-    title: "Privacy Policy | OpenTools",
-    description: "Learn how OpenTools collects, uses, and protects your personal information.",
+    title: "Privacy Policy | aifinds",
+    description: "Learn how aifinds collects, uses, and protects your personal information.",
     type: "website",
     url: "https://aifinds.ai/privacy",
   },
   twitter: {
     card: "summary",
-    title: "Privacy Policy | OpenTools",
-    description: "Learn how OpenTools collects, uses, and protects your personal information.",
+    title: "Privacy Policy | aifinds",
+    description: "Learn how aifinds collects, uses, and protects your personal information.",
   },
   robots: {
     index: true,
@@ -132,7 +132,7 @@ export default function PrivacyPolicy() {
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
         <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          At OpenTools, we are committed to protecting the privacy of our users&apos;
+          At aifinds, we are committed to protecting the privacy of our users&apos;
           personal information. This policy explains how we collect, use, and protect your data.
         </p>
       </div>
