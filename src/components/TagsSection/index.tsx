@@ -2,17 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-
-// Helper function to convert tag name to URL-friendly slug
-function tagToSlug(tag: string): string {
-  return tag
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-}
+import { tagToSlug } from "@/utils/news-tag-slug";
 
 interface TagsSectionProps {
   allTags: string[];
