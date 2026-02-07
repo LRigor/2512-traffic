@@ -1,15 +1,5 @@
 import newsData from "@/data/news/list.json";
-
-type NewsItem = {
-  _id: string;
-  slug: string;
-  headline: string;
-  thumbnail_image: string;
-  summary: string;
-  last_updated: string;
-  category?: string;
-  tags?: string[];
-};
+import type { NewsItem } from "@/types/news";
 
 /**
  * Extracts all unique tags from news/list.json
