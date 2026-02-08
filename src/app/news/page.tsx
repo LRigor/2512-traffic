@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import newsData from "@/data/news/list.json";
-import { formatDate } from "@/utils/formatDate";
 import { getNewsTags } from "@/utils/getNewsTags";
 import TagsSection from "@/components/TagsSection";
+import { ArticleCard } from "@/components/news";
 import type { NewsItem } from "@/types/news";
 
 const SITE_NAME = "OpenTools";
+const SITE_URL = "https://aifinds.ai";
 
+/**
+ * Sorts news items by last updated date (newest first).
+ * Creates a new array to avoid mutating the original data.
+ */
 function getSortedNewsItems(): NewsItem[] {
   const items = newsData as NewsItem[];
   return [...items].sort((a, b) => {
@@ -18,77 +21,101 @@ function getSortedNewsItems(): NewsItem[] {
   });
 }
 
+/**
+ * Generates structured data for the news list page.
+ */
+function buildNewsListJsonLd(items: NewsItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "News",
+    description: "Latest AI and tech news, product updates, and industry insights.",
+    url: `${SITE_URL}/news`,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: items.length,
+      itemListElement: items.slice(0, 10).map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "NewsArticle",
+          headline: item.headline,
+          url: `${SITE_URL}/news/${item.slug}`,
+          datePublished: item.last_updated,
+          image: item.thumbnail_image,
+        },
+      })),
+    },
+  };
+}
+
 export const metadata: Metadata = {
   title: `News - ${SITE_NAME}`,
   description:
     "Stay updated with the latest AI and tech news, product updates, and industry insights.",
+  alternates: {
+    canonical: `${SITE_URL}/news`,
+  },
   openGraph: {
     title: `News - ${SITE_NAME}`,
     description:
       "Stay updated with the latest AI and tech news, product updates, and industry insights.",
     type: "website",
+    url: `${SITE_URL}/news`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `News - ${SITE_NAME}`,
+    description:
+      "Stay updated with the latest AI and tech news, product updates, and industry insights.",
   },
 };
 
 export default function NewsPage() {
   const allTags = getNewsTags();
   const items = getSortedNewsItems();
+  const jsonLd = buildNewsListJsonLd(items);
 
   return (
-    <div className="space-y-12 pb-20">
-      <header className="space-y-2">
-        <h1 className="text-4xl font-bold text-black dark:text-zinc-50">
-          News
-        </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400">
-          Stay updated with the latest AI and tech news.
-        </p>
-      </header>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="space-y-12 pb-20">
+        <header className="space-y-2">
+          <h1 className="text-4xl font-bold text-black dark:text-zinc-50">
+            News
+          </h1>
+          <p className="text-lg text-zinc-600 dark:text-zinc-400">
+            Stay updated with the latest AI and tech news, product updates, and
+            industry insights.
+          </p>
+        </header>
 
-      <TagsSection allTags={allTags} />
+        <TagsSection allTags={allTags} />
 
-      <section
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-        aria-label="News articles"
-      >
-        {items.map((item) => (
-          <ArticleCard key={item._id} item={item} />
-        ))}
-      </section>
-    </div>
-  );
-}
-
-function ArticleCard({ item }: { item: NewsItem }) {
-  return (
-    <Link
-      href={`/news/${item.slug}`}
-      className="flex flex-col rounded-lg overflow-hidden bg-white dark:bg-zinc-800 shadow-sm border border-zinc-200 dark:border-zinc-700 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-900"
-      aria-label={`Read: ${item.headline}`}
-    >
-      <div className="relative h-48 bg-zinc-100 dark:bg-zinc-700 aspect-video">
-        <Image
-          src={item.thumbnail_image}
-          alt=""
-          fill
-          className="object-cover"
-          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-          loading="lazy"
-        />
+        {items.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-lg text-zinc-600 dark:text-zinc-400">
+              No news articles available at the moment.
+            </p>
+          </div>
+        ) : (
+          <section
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            aria-label="News articles"
+          >
+            {items.map((item, index) => (
+              <ArticleCard
+                key={item._id}
+                item={item}
+                priority={index < 4}
+              />
+            ))}
+          </section>
+        )}
       </div>
-      <div className="flex flex-col flex-1 p-4 space-y-3">
-        <h2 className="text-lg font-semibold leading-snug text-black dark:text-zinc-50">
-          {item.headline}
-        </h2>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          <time dateTime={item.last_updated}>
-            {formatDate(item.last_updated, "long")}
-          </time>
-        </p>
-        <p className="text-sm text-zinc-600 dark:text-zinc-300 line-clamp-3">
-          {item.summary}
-        </p>
-      </div>
-    </Link>
+    </>
   );
 }
