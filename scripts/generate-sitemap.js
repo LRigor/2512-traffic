@@ -37,30 +37,6 @@ const categoryPages = categories.map(category => ({
   changefreq: 'daily'
 }));
 
-// Tool detail pages
-const toolPages = [];
-
-categories.forEach(category => {
-  const categoryDataPath = path.join(__dirname, `../src/data/${category.id}.json`);
-  
-  if (fs.existsSync(categoryDataPath)) {
-    const categoryData = JSON.parse(fs.readFileSync(categoryDataPath, 'utf8'));
-    
-    if (categoryData.data) {
-      categoryData.data.forEach(tool => {
-        if (tool.slug) {
-          toolPages.push({
-            url: `${baseUrl}/${category.id}/${tool.slug}`,
-            priority: '0.8',
-            changefreq: 'weekly',
-            lastmod: tool.last_updated || currentDate
-          });
-        }
-      });
-    }
-  }
-});
-
 // Launched Today tool pages
 const launchedTodayPages = launchedTodayData.tools.map(tool => ({
   url: `${baseUrl}/tool/${tool.slug}`,
@@ -74,7 +50,7 @@ const newsPath = path.join(__dirname, '../src/data/news');
 const newsList = JSON.parse(fs.readFileSync(path.join(newsPath, 'list.json'), 'utf8'));
 
 // Combine all pages
-const allPages = [...staticPages, ...categoryPages, ...toolPages, ...launchedTodayPages];
+const allPages = [...staticPages, ...categoryPages, ...launchedTodayPages];
 
 // Generate XML
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
