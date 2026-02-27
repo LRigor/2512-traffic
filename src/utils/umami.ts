@@ -107,7 +107,7 @@ function insertUmamiScript(
 const domain_umamiid: DomainUmamiConfig[] = [
   {
     domains: ["aifinds.ai"],
-    umamiid: "79d655a9-6c62-4fcc-8de7-10b986764193", //https://cloud.umami.is/analytics/us/teams/80aefb14-0bd6-4008-a482-a3abd24707c6/websites/79d655a9-6c62-4fcc-8de7-10b986764193
+    umamiid: "ade5a830-1267-4cde-bea3-266234bee55a", //https://cloud.umami.is/share/fSuLadGbEdCsuDLX
   },
 ];
 
